@@ -15,8 +15,6 @@ class Lec extends MY_Controller {
 
 	public function index()
 	{		
-		          // get the first row
-
 		$this->page_data['lec'] = $this->lec_model->get();
 		$this->load->view('leagueoflegends/lec', $this->page_data);
 	}

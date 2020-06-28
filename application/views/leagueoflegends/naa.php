@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
           <?php foreach ($naa as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
               <td>
                 <?php echo $row->GP ?>
               </td>
@@ -108,7 +108,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
           <?php foreach ($naa as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
               <td>
                 <?php echo $row->FD ?>
               </td>
@@ -159,7 +159,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
           <?php foreach ($naa as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
 
               <td>
                 <?php echo $row->FT ?>
@@ -216,7 +216,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
           <?php foreach ($naa as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
               <td>
                 <?php echo $row->K ?>
               </td>
@@ -271,7 +271,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
           <?php foreach ($naa as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
 
               <td>
                 <?php echo $row->GPR ?>
@@ -332,7 +332,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
           <?php foreach ($naa as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
 
               <td>
                 <?php echo $row->FD ?>

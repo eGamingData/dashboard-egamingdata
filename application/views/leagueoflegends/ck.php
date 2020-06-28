@@ -3,7 +3,7 @@ $league = 'Challengers Korea';
 $season = 'Summer 2020';
 
 /** QUERY TO GET LAST UPDATE **/
-$query = $this->db->query('SELECT * FROM ck WHERE Team="Brion Blade"');
+$query = $this->db->query('SELECT * FROM ck WHERE Team="RunAway"');
 $res = $query->result();  // this returns an object of all results
 $updated = $res[0]; 
 /******************************/
@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
   <h1>
      <span class="purple"><?php echo $league ?></span> <?php echo $season ?> Data
       <small> 
-     <p> | Last Updated: <?php echo $updated->Last_Updated ?></p>  
+     <p> | Last Updated: <?php echo $updated->Last_Updated?></p>  
     </small>
   </h1>
 </section>
@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
           <?php foreach ($ck as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
               <td>
                 <?php echo $row->GP ?>
               </td>
@@ -108,7 +108,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
           <?php foreach ($ck as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
               <td>
                 <?php echo $row->FD ?>
               </td>
@@ -159,7 +159,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
           <?php foreach ($ck as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
 
               <td>
                 <?php echo $row->FT ?>
@@ -216,7 +216,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
           <?php foreach ($ck as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
               <td>
                 <?php echo $row->K ?>
               </td>
@@ -271,7 +271,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
           <?php foreach ($ck as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
 
               <td>
                 <?php echo $row->GPR ?>
@@ -332,7 +332,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
           <?php foreach ($ck as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
 
               <td>
                 <?php echo $row->FD ?>

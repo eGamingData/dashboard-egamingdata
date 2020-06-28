@@ -28,13 +28,13 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
     <?php echo form_open('/login/check', ['method' => 'POST', 'autocomplete' => 'off']); ?> 
       <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Enter Username or Email..." value="<?php echo post('username') ?>" name="username" autofocus />
+        <input style="border-radius: 1.5rem;" type="text" class="form-control" placeholder="Enter Username or Email..." value="<?php echo post('username') ?>" name="username" autofocus />
         <span class="fa fa-user form-control-feedback"></span>
         <?php echo form_error('username', '<div class="error" style="color: red;">', '</div>'); ?>
       </div>
 
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password" name="password">
+        <input style="border-radius: 1.5rem;" type="password" class="form-control" placeholder="Password" name="password">
         <span class="fa fa-lock form-control-feedback"></span>
         <?php echo form_error('password', '<div class="error" style="color: red;">', '</div>'); ?>
       </div>

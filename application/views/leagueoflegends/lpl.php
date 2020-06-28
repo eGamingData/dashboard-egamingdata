@@ -66,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
           <?php foreach ($lpl as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
               <td>
                 <?php echo $row->GP ?>
               </td>

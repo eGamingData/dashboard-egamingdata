@@ -67,12 +67,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </a>
         
       </li>
-
+      <?php if ( hasPermissions('company_settings') ): ?>
       <li <?php echo ($page->submenu=='eum')?'class="active"':'' ?>>
         <a href="<?php echo url('/eum') ?>">
           <i class="fa fa-angle-right"></i> EU Masters
         </a>
-        
+      <?php endif ?>
       </li>
 
       <li <?php echo ($page->submenu=='naa')?'class="active"':'' ?>>
@@ -98,13 +98,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
      <span>CS:GO</span>
     </a>
   </li>
-
+  <?php if ( hasPermissions('predictions') ): ?>
+   <li <?php echo ($page->menu=='predictions')?'class="active"':'' ?>>
+    <a href="<?php echo url('predictions') ?>">
+       <i class="fa fa-cogs" aria-hidden="true"></i>
+    </i> <span>eGamingData AI</span>
+    </a>
+  </li>
+  <?php endif ?>
+  <?php if ( hasPermissions('company_settings') ): ?>
   <li <?php echo ($page->menu=='status')?'class="active"':'' ?>>
     <a href="<?php echo url('status') ?>">
      <i class="fa fa-info-circle" aria-hidden="true"></i>
      <span>Data status</span>
     </a>
   </li>
+  <?php endif ?>
 
   <?php if (hasPermissions('users_list')): ?>
     <li <?php echo ($page->menu=='users')?'class="active"':'' ?>>

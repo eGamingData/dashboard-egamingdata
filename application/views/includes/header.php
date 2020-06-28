@@ -62,6 +62,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <link rel="stylesheet" href="<?php echo $url->assets ?>/css/app.css" />
 
   <link rel="stylesheet" href="<?php echo $url->assets ?>/css/stylesheet.css" />
+
+  <link rel="stylesheet" href="<?php echo $url->assets ?>/js/predictions.js" />
   
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->

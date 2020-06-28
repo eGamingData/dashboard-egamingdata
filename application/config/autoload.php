@@ -150,4 +150,5 @@ $autoload['model'] = array(
 	'eum_model',
 	'naa_model',
 	'status_model',
+	'predictions_model',
 );

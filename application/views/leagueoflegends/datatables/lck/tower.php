@@ -14,7 +14,6 @@
         <thead>
           <tr>
             <th>Team</th>
-
             <th>First Tower %</th>
             <th>First 3 Towers %</th>
           </tr>
@@ -23,7 +22,7 @@
 
           <?php foreach ($lck as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
 
               <td>
                 <?php echo $row->FT ?>

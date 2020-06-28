@@ -23,7 +23,7 @@
 
           <?php foreach ($lcs as $row): ?>
             <tr>
-              <td><?php echo $row->Team ?></td>
+              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
 
               <td>
                 <?php echo $row->FT ?>
