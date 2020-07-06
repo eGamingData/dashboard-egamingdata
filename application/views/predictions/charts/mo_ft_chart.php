@@ -30,11 +30,11 @@ try{
 	
     foreach($result as $row){
     	$tie = 'tie';
-         array_push($datapoints[$i], array("y"=>substr($row->result_team_one, 0, -1), "label"=> $row->team_one));         
+         array_push($datapoints[$i], array("y"=>substr(($row->result_team_one * 1000), 0, -1), "label"=> $row->team_one));         
 
-        array_push($datapoints[$i], array("y"=>substr($row->result_team_two, 0, -1), "label"=> $row->team_two));
+        array_push($datapoints[$i], array("y"=>substr(($row->result_team_two * 1000), 0, -1), "label"=> $row->team_two));
        
-        array_push($datapoints[$i], array("y"=>substr($row->result_tie, 0, -1), "label"=> $row->tie_label));
+        //array_push($datapoints[$i], array("y"=>substr(($row->result_tie * 1000), 0, -1), "label"=> $row->tie_label));
          
 
          $i += 1;
@@ -95,7 +95,6 @@ function loadftChart(){
 		    data: [{
 		        type: "pie",
 		        barThickness: 15,
-		        yValueFormatString:"#0.00\"%\"",
 		        indexLabelFontFamily: "arboria-bolduploaded_file",
 		        indexLabelFontColor: "#ffff",
 		        showInLegend: true,

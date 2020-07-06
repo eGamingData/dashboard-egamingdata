@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </i> <span>Home</span>
     </a>
   </li>
-
+<?php if (hasPermissions('league_of_legends')): ?>
  <li class="treeview <?php echo ($page->menu=='leagueoflegends')?'active':'' ?>">
     <a href="#">
       <img src="../assets/img/lol-icon.png" width=" 16px" style="margin-right: 5px;">
@@ -84,7 +84,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     </ul>
   </li>
-
+<?php endif ?>
   <li <?php echo ($page->menu=='dota')?'class="active"':'' ?>>
     <a href="<?php echo url('dota') ?>">
      <img src="../assets/img/dota-icon.png" width=" 17px" style="margin-right: 5px;"></i> 
