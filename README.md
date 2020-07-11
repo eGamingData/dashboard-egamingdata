@@ -1,2 +1,2 @@
-# dashboard-egamingdata
-Dashboard for eGamingdata (dashboard.egamingdata.com
+# eGaming Data Dashboard
+Made with codeigniter
