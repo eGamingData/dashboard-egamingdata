@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
     <?php echo form_close(); ?>
 
     <a href="<?php echo url('login/forget?username='.post('username')) ?>">Forgot your password ?</a><br>
-    <!-- <a href="register.html" class="text-center">Register a new membership</a> -->
+    <a href="<?php echo url('signup'); ?>" class="text-center">Register a new membership</a>
 
   </div>
   <!-- /.login-box-body -->

@@ -80,6 +80,16 @@ class Login extends CI_Controller {
 
             $this->index();
             return;
+        }elseif( $attempt=='no_sub' ){
+			
+        	// Trial time expired
+
+			$this->data['message'] = 'Your free trial time expired...';
+            $this->data['message_type'] = 'danger';
+
+            $this->index();
+            return;
+
         }else{
         	
         	// if invalid value or false returned by $attempt

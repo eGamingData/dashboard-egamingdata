@@ -9,10 +9,14 @@ class Users_model extends MY_Model {
 	{
 
 
+
 		$this->db->where('username', $data['username']);
 		$this->db->or_where('email', $data['username']);
 
 		$query = $this->db->get($this->table);
+		$date_now = date("Y-m-d H:i:s");
+		$date_expiry = $query->row()->trial_expiry;
+		$role = $query->row()->role;
 
 		// validate user
 		if(!empty($query) && $query->num_rows() > 0){
@@ -20,14 +24,23 @@ class Users_model extends MY_Model {
 			// checks the password
 			if($query->row()->password == hash( "sha256", $data['password'] )){
 
-				if ($query->row()->status==='1')
-					return 'valid'; // if valid password and username and allowed
-				else
+				if ( $date_now > $date_expiry AND $role == '5') {			
+					return 'no_sub'; // if valid password and username and allowed
+
+				} elseif ($query->row()->status==='1') {
+					return 'valid';
+
+				} else {
 					return 'not_allowed';
+				}
+				
+				
 
 			}
-			else
+			else {
+
 				return 'invalid_password'; // if invalid password
+			}
 
 		}
 
