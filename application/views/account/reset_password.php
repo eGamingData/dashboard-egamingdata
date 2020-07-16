@@ -62,5 +62,8 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
   <!-- /.login-box-body -->
 </div>
 <!-- /.login-box -->
+<div class="form-footer">
+<p>Go back to  <a href="<?php echo url('login') ?>">Login</a></p>
+</div>
 
 <?php include 'includes/footer.php' ?>

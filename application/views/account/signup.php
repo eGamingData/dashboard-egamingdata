@@ -96,7 +96,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
         <!-- /.col -->
         <div class="checkbox icheck center" style="width: 70%">
             <label>
-              <input type="checkbox" name="remember_me"  required /> I agree to the terms of service <a class="purple" href="">terms of service.</a>
+              <input type="checkbox" name="remember_me"  required /> I agree to the terms of service <a class="purple" href="https://egamingdata.com/terms.html">terms of service.</a>
             </label>
           </div>
 
