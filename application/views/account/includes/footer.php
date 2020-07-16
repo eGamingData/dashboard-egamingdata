@@ -2,6 +2,11 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
+
+<center></center>
+
+
+
 <!-- jQuery 3 -->
 <script src="<?php echo $assets ?>/js/jquery/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->

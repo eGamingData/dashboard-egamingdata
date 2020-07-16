@@ -84,7 +84,7 @@ class Login extends CI_Controller {
 			
         	// Trial time expired
 
-			$this->data['message'] = 'Your free trial time expired...';
+			$this->data['message'] = 'Your subscription has expired...';
             $this->data['message_type'] = 'danger';
 
             $this->index();

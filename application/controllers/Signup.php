@@ -77,7 +77,7 @@ class Signup extends CI_Controller {
       $res=$this->db->insert('users',$data);
       
        $this->session->set_flashdata('msg', '<div class="alert alert-success" role="alert">
-Sign up process completed.
+Sign up process completed successfully.
 </div>');
          redirect('/signup');
         }

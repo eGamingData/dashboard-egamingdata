@@ -43,7 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
       </div>
     <?php echo form_close(); ?>
 
-    <a href="<?php echo url('login') ?>"> <i class="fa fa-chevron-left"></i> Go To Login</a><br>
+    <a class="purple" href="<?php echo url('login') ?>"> <i class="fa fa-chevron-left"></i> Go To Login</a><br>
 
   </div>
   <!-- /.login-box-body -->

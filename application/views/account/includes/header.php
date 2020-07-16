@@ -25,6 +25,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <!-- Login style -->
   <link rel="stylesheet" href="<?php echo $assets ?>/css/login.css">
 
+  <!-- egamingdata custom style -->
+  <link rel="stylesheet" href="<?php echo $assets ?>/css/stylesheet.css">
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

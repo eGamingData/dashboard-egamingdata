@@ -36,3 +36,32 @@
 .round-input{
     border-radius: 1.5rem;
 }
+
+.form-footer{
+    text-align: center;
+vertical-align: middle;
+line-height: 90px;    
+}
+
+.form-footer a{
+    color: #f95fcd;
+    margin-left: 5px;
+}
+
+.form-footer p{
+    color: white;
+}
+
+
+div.center {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%
+}
+
+a.purple{
+  color: #f95fcd;
+}
+

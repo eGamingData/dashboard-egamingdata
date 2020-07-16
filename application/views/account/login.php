@@ -9,7 +9,8 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
   <div class="login-logo">
     <a href="<?php echo url('/') ?>"><img src="../assets/img/logo_black.png" class="logo-fl" alt="Logo" style="max-width: 30rem;"></a>
   </div>
-    <p class="login-box-msg">Sign in to start your session</p>
+    <p class="login-box-msg">
+Login to your eGamingData account.</p>
 
     <?php if(isset($message)): ?>
       <div class="alert alert-<?php echo $message_type ?>">
@@ -30,13 +31,15 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
       <div class="form-group has-feedback">
         <input style="border-radius: 1.5rem;" type="text" class="form-control" placeholder="Enter Username or Email..." value="<?php echo post('username') ?>" name="username" autofocus />
         <span class="fa fa-user form-control-feedback"></span>
-        <?php echo form_error('username', '<div class="error" style="color: red;">', '</div>'); ?>
+        <?php echo form_error('username', '<div class="error" style="color: red; margin-left: 5px;">', '</div>'); ?>
       </div>
 
       <div class="form-group has-feedback">
+        
         <input style="border-radius: 1.5rem;" type="password" class="form-control" placeholder="Password" name="password">
         <span class="fa fa-lock form-control-feedback"></span>
-        <?php echo form_error('password', '<div class="error" style="color: red;">', '</div>'); ?>
+        <?php echo form_error('password', '<div class="error" style="color: red; margin-left: 5px;">', '</div>'); ?>
+        
       </div>
 
       <?php if (setting('google_recaptcha_enabled') == '1'): ?>
@@ -45,7 +48,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
       
       <div class="form-group">
         <div class="g-recaptcha" data-sitekey="<?php echo setting('google_recaptcha_sitekey') ?>"></div>
-        <?php echo form_error('g-recaptcha-response', '<div class="error" style="color: red;">', '</div>'); ?>
+        <?php echo form_error('g-recaptcha-response', '<div class="error" style="color: red; margin-left: 5px;">', '</div>'); ?>
       </div>
 
       <?php endif ?>
@@ -68,13 +71,15 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
         <!-- /.col -->
       </div>
     <?php echo form_close(); ?>
-
-    <a href="<?php echo url('login/forget?username='.post('username')) ?>">Forgot your password ?</a><br>
-    <a href="<?php echo url('signup'); ?>" class="text-center">Register a new membership</a>
+    <a class="purple" href="<?php echo url('login/forget?username='.post('username')) ?>"><i class="fa fa-lock"></i> Can't remember the password? </a> 
 
   </div>
   <!-- /.login-box-body -->
 </div>
 <!-- /.login-box -->
+<!-- Under Form Links -->
+<div class="form-footer">
+<p>Don't have an account yet?  <a href="<?php echo url('signup') ?>">Register here </a></p>
+</div>
 
 <?php include 'includes/footer.php' ?>
