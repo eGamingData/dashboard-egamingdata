@@ -24,10 +24,10 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
               <b>Username</b> <a class="pull-right"><?php echo $user->username ?></a>
             </li>
             <li class="list-group-item">
-              <b>Last Login</b> <a class="pull-right"><?php echo date( setting('date_format'), strtotime($user->last_login)) ?></a>
+              <b>Last Login</b> <a class="pull-right purple"><?php echo date( setting('date_format'), strtotime($user->last_login)) ?></a>
             </li>
             <li class="list-group-item">
-              <b>Member Since</b> <a class="pull-right"><?php echo date( setting('date_format'), strtotime($user->created_at)) ?></a>
+              <b>Member Since</b> <a class="pull-right purple"><?php echo date( setting('date_format'), strtotime($user->created_at)) ?></a>
             </li>
           </ul>
 

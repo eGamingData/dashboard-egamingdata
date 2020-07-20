@@ -8,10 +8,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="pull-right hidden-xs">
       Made with <i class="fa fa-heart" style="color: red;"></i> 
       &nbsp; &nbsp; &nbsp; &nbsp; 
-      <b>Version</b> 0.2
+      <b>Version</b> 1.0
     </div>
-    <strong>Copyright &copy; <?php echo date('Y') ?> <a href="<?php echo url('/') ?>"><?php echo setting('company_name') ?></a>.</strong> All rights
-    reserved.
+    <strong>Copyright &copy; <?php echo date('Y') ?> <a class="purple" href="<?php echo url('/') ?>"><?php echo setting('company_name') ?></a>. </strong> All rights 
+    reserved | <a class="purple" href="https://egamingdata.com/refunds.html">Refund Policy </a> &  <a class="purple" href="https://egamingdata.com/terms.html">Terms of service </a>
   </footer>
 
 </div>

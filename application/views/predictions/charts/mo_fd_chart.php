@@ -3,7 +3,7 @@
 try{
      // Creating a new connection.
     // Replace your-hostname, your-db, your-username, your-password according to your database
-    $link = new \PDO(   'mysql:host=146.148.2.232;dbname=egamingdata;charset=utf8mb4', //'mysql:host=localhost;dbname=canvasjs_db;charset=utf8mb4',
+    $link = new \PDO(   'mysql:host=185.253.154.97;dbname=egamingdata;charset=utf8mb4', //'mysql:host=localhost;dbname=canvasjs_db;charset=utf8mb4',
                         'root', //'root',
                         'Qwertyuiop7*', //'',
                         array(
@@ -12,7 +12,7 @@ try{
                         )
                     );
 	
-    $handle = $link->prepare('SELECT team_one,result_team_one, result_tie, team_two, result_team_two, tie_label, data_event FROM lol_models WHERE mo_type="mo_fd" '); 
+    $handle = $link->prepare('SELECT team_one,result_team_one, result_tie, team_two, result_team_two, tie_label, data_event FROM lol_models WHERE mo_type="mo_fd"  '); 
     $handle->execute(); 
     $result = $handle->fetchAll(\PDO::FETCH_OBJ);
 

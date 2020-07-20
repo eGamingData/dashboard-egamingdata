@@ -125,7 +125,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>e</b>GD</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><img src="http://egamingdata.com/assets/img/logo.png" class="logo-fl" alt="Logo" style="max-width: 20rem;"></span>
+      <span class="logo-lg"><img src="https://egamingdata.com/assets/img/logo.png" class="logo-fl" alt="Logo" style="max-width: 20rem;"></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -170,7 +170,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </li>
           <!-- Control Sidebar Toggle Button -->
           <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+            <a href="#" data-toggle="control-sidebar"></a>
           </li>
         </ul>
       </div>

@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-    <span class="purple">AI</span> Predictions
+    <span class="purple">Global AI</span> Predictions
     <small>| esports data for betting purpouses.</small>
   </h1>
   <span class="pull-right-container">
@@ -79,40 +79,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
     </div>
     <!-- /.box-footer-->
   </div>
-  
-<?php include 'charts/mo_fd_chart.php'; ?>
-<?php include 'charts/mo_ft_chart.php'; ?>
 
-
-<?php 
-$id = 0;
-foreach($result as $row){
-    $team_one = $row->team_one;
-    $team_two = $row->team_two;
-    $data_event = $row->data_event;
-    echo '
-      <div class="box collapsed-box">
-          <div class="box-header with-border">
-            <h3 class="box-title"> '.$team_one.' VS '.$team_two.'  |  '.$data_event.'</h3>
-            <div class="box-tools pull-right">
-            <button type="button" onclick="setTimeout(loadCharts, 10)" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"title="Collapse">
-            <i class="fa fa-plus"></i></button>
-          </div>
-          </div>
-          <div class="box-body" >
-            <div class="col-md-6">
-             <div id="mofd'.$id.'" style="height: 570px; width: 50%; margin: 0 17%;"></div>
-            </div>  
-            <div class="col-md-6">
-             <div id="moft'.$id.'" style="height: 570px; width: 50%; margin: 0 17%;"></div>
-            </div>           
-          </div>
-            <div class="box-footer" style="display: none;">
-            </div>
-          </div>';   
-    $id += 1;
-   }
- ?>
 </section>
 <!-- /.content -->
 
@@ -123,25 +90,3 @@ foreach($result as $row){
   $('#dataTable1').DataTable(); 
 </script>
 
-<script>
-  window.onload = function () {
-  //Adds color set to charts
-  CanvasJS.addColorSet("greenShades",
-              [//colorSet Array
-              "#882556",
-              "#bb1255", 
-              "#fc3468",
-              "#ff6289",
-              "#fc3468",
-              ]); 
-  }
-
-  function loadCharts() {
-
-    loadfdChart();
-    loadftChart();   //Loads First Drake Model chart  
-    
-  }
-
-
-</script>

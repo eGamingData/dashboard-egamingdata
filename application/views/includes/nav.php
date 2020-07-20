@@ -99,13 +99,42 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </a>
   </li>
   <?php if ( hasPermissions('predictions') ): ?>
-   <li <?php echo ($page->menu=='predictions')?'class="active"':'' ?>>
-    <a href="<?php echo url('predictions') ?>">
+  <li class="treeview <?php echo ($page->menu=='predictions')?'active':'' ?>">
+   <a href="<?php echo url('predictions') ?>">
        <i class="fa fa-cogs" aria-hidden="true"></i>
-    </i> <span>eGamingData AI</span>
+      <span>eGamingData AI</span>
+      <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+      </span>
+    </a>
+    <ul class="treeview-menu">
+       <li <?php echo ($page->submenu=='predictions-home')?'class="active"':'' ?>>
+        <a href="<?php echo url('predictions') ?>">
+          <i class="fa fa-angle-right"></i> Predictions
+        </a>
+      </li>
+      <li <?php echo ($page->submenu=='lec-predictions')?'class="active"':'' ?>>
+        <a href="<?php echo url('lec_predictions') ?>">
+          <i class="fa fa-angle-right"></i> LEC
+        </a>
+      </li>
+    </ul>
+  </li>
+  <?php if ( hasPermissions('betting_tracker') ): ?>
+  <li <?php echo ($page->menu=='betting_tracker')?'class="active"':'' ?>>
+    <a href="<?php echo url('betting_tracker') ?>">
+       <i class="fa fa-bar-chart" aria-hidden="true"></i>
+    </i> <span>Betting tracker</span>
     </a>
   </li>
   <?php endif ?>
+  <?php endif ?>
+  <li <?php echo ($page->menu=='subscription')?'class="active"':'' ?>>
+    <a href="<?php echo url('subscription') ?>">
+       <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+    </i> <span>Subscriptions</span>
+    </a>
+  </li>  
   <?php if ( hasPermissions('company_settings') ): ?>
   <li <?php echo ($page->menu=='status')?'class="active"':'' ?>>
     <a href="<?php echo url('status') ?>">
@@ -195,3 +224,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 </ul>
+

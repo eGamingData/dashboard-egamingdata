@@ -12,7 +12,7 @@ try{
                         )
                     );
 	
-    $handle = $link->prepare('SELECT team_one,result_team_one, result_tie, team_two, result_team_two, tie_label, data_event FROM lol_models WHERE mo_type="mo_ft" '); 
+    $handle = $link->prepare('SELECT team_one,result_team_one, result_tie, team_two, result_team_two, tie_label, data_event FROM lol_models WHERE mo_type="mo_fb"  AND league="lec" '); 
     $handle->execute(); 
     $result = $handle->fetchAll(\PDO::FETCH_OBJ);
 
@@ -51,15 +51,15 @@ catch(\PDOException $ex){
 
 <script type="text/javascript">
 	
-function loadftChart(){
+function loadfbChart(){
 
-	var ftdatapoints = <?php echo json_encode($datapoints ); ?>;
+	var fbdatapoints = <?php echo json_encode($datapoints ); ?>;
 
-		var arrayLength = ftdatapoints.length;
+		var arrayLength = fbdatapoints.length;
 
 		for (var i = 0; i < arrayLength; i++) {
-		    console.log(ftdatapoints[i]);
-		    var id = 'moft' + i
+		    console.log(fbdatapoints[i]);
+		    var id = 'mofb' + i
 
 		    var chart = new CanvasJS.Chart(id, {
 		    colorSet: "greenShades",
@@ -71,7 +71,7 @@ function loadftChart(){
 		    exportFileName: "eGamingData_LEC_First_Drake",
 		    theme: "light1", // "light1", "light2", "dark1", "dark2"
 		    title:{
-		        text: "First Tower %",
+		        text: "First Blood %",
 		        fontSize: 20,
 		        fontFamily: "arboria-bolduploaded_file",
 		        fontWeight: "bold",
@@ -100,12 +100,12 @@ function loadftChart(){
 		        showInLegend: true,
 		        legendText: "{label}",
 		        indexLabelPlacement: "inside",
-		        dataPoints: ftdatapoints[i]
+		        dataPoints: fbdatapoints[i]
 		    }]
 		});
 
 		chart.render();
-		console.log('First Tower Chart '+ i + " created...");
+		console.log('First Blood Chart '+ i + " created...");
 		    
 		}
 

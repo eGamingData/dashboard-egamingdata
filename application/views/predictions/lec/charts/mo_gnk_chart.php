@@ -12,7 +12,7 @@ try{
                         )
                     );
 	
-    $handle = $link->prepare('SELECT team_one,result_team_one, result_tie, team_two, result_team_two, tie_label, data_event FROM lol_models WHERE mo_type="mo_ft" '); 
+    $handle = $link->prepare('SELECT team_one,result_team_one, result_tie, team_two, result_team_two, tie_label, data_event FROM lol_models WHERE mo_type="mo_gnk"  AND league="lec"'); 
     $handle->execute(); 
     $result = $handle->fetchAll(\PDO::FETCH_OBJ);
 
@@ -34,7 +34,7 @@ try{
 
         array_push($datapoints[$i], array("y"=>substr(($row->result_team_two * 1000), 0, -1), "label"=> $row->team_two));
        
-        //array_push($datapoints[$i], array("y"=>substr(($row->result_tie * 1000), 0, -1), "label"=> $row->tie_label));
+        array_push($datapoints[$i], array("y"=>substr(($row->result_tie * 1000), 0, -1), "label"=> $row->tie_label));
          
 
          $i += 1;
@@ -51,15 +51,15 @@ catch(\PDOException $ex){
 
 <script type="text/javascript">
 	
-function loadftChart(){
+function loadgnkChart(){
 
-	var ftdatapoints = <?php echo json_encode($datapoints ); ?>;
+	var gnkdatapoints = <?php echo json_encode($datapoints ); ?>;
 
-		var arrayLength = ftdatapoints.length;
+		var arrayLength = gnkdatapoints.length;
 
 		for (var i = 0; i < arrayLength; i++) {
-		    console.log(ftdatapoints[i]);
-		    var id = 'moft' + i
+		    console.log(gnkdatapoints[i]);
+		    var id = 'mognk' + i
 
 		    var chart = new CanvasJS.Chart(id, {
 		    colorSet: "greenShades",
@@ -71,7 +71,7 @@ function loadftChart(){
 		    exportFileName: "eGamingData_LEC_First_Drake",
 		    theme: "light1", // "light1", "light2", "dark1", "dark2"
 		    title:{
-		        text: "First Tower %",
+		        text: "Greater Number of Kills %",
 		        fontSize: 20,
 		        fontFamily: "arboria-bolduploaded_file",
 		        fontWeight: "bold",
@@ -95,17 +95,19 @@ function loadftChart(){
 		    data: [{
 		        type: "pie",
 		        barThickness: 15,
+		        percentFormatString: "#0#.#",
+		        yValueFormatString:"##.#",
 		        indexLabelFontFamily: "arboria-bolduploaded_file",
 		        indexLabelFontColor: "#ffff",
 		        showInLegend: true,
 		        legendText: "{label}",
 		        indexLabelPlacement: "inside",
-		        dataPoints: ftdatapoints[i]
+		        dataPoints: gnkdatapoints[i]
 		    }]
 		});
 
 		chart.render();
-		console.log('First Tower Chart '+ i + " created...");
+		console.log('Greater Number of Kills Chart '+ i + " created...");
 		    
 		}
 

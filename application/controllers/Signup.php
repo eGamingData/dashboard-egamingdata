@@ -43,7 +43,6 @@ class Signup extends CI_Controller {
          
           $this->form_validation->set_rules('password', 'Password', 'required');
           $this->form_validation->set_rules('cpassword', 'Confirm Password', 'required|matches[password]');
-          $this->form_validation->set_rules('phone', 'Phone', 'regex_match[/^[0-9]{10}$/]'); 
           
           if($this->input->post('username') != $original_value) {
           $is_unique =  '|is_unique[users.username]';
@@ -61,12 +60,10 @@ class Signup extends CI_Controller {
                 
 
               $trial_expiry = $date = date('Y-m-d H:i:s', strtotime('+3 days'));
-
               $data = array(
              'name'=>$_POST['fname'].' '.$_POST['lname'],
               'email'=>$_POST['email'],
                'username'=>$_POST['username'],
-                'phone'=>@$_POST['phone'],
                 'password'=>hash( "sha256", $_POST['password']),
                 'role'=>5,
                 'trial_expiry'=>$trial_expiry

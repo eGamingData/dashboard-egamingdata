@@ -53,10 +53,23 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <?php include viewPath('includes/footer'); ?>
 
 <script>
-  $('#dataTable1').DataTable()
-  $('#dataTable2').DataTable()
-  $('#dataTable3').DataTable();
-  $('#dataTable4').DataTable();
-  $('#dataTable5').DataTable();
-  $('#dataTable6').DataTable();
+  $('#dataTable1').DataTable({
+        "sDom": 't',
+        "order": [[ 2, "desc" ]]
+    });
+  $('#dataTable2').DataTable({
+        "sDom": 't'
+    });
+  $('#dataTable3').DataTable({
+        "sDom": 't'
+    });
+  $('#dataTable4').DataTable({
+        "sDom": 't'
+    });
+  $('#dataTable5').DataTable({
+        "sDom": 't'
+    });
+  $('#dataTable6').DataTable({
+        "sDom": 't'
+    });
 </script>

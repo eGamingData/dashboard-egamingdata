@@ -25,7 +25,7 @@
 
           <?php foreach ($lec as $row): ?>
             <tr>
-              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
+              <td><span><?php echo $row->Image ?></span><?php echo $row->Team ?></td>
               <td>
                 <?php echo $row->GP ?>
               </td>
