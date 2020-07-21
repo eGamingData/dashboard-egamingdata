@@ -151,5 +151,5 @@ $autoload['model'] = array(
 	'naa_model',
 	'status_model',
 	'predictions_model',
-	'lec_predictions_model',
+	'darts_model',
 );

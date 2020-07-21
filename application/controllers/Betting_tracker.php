@@ -3,12 +3,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Betting_tracker extends MY_Controller {
 
-	public function index()
+	public function __construct()
 	{
-		$this->load->view('Betting_tracker', $this->page_data);
+		parent::__construct();
+		$this->page_data['page']->title = 'Betting Tracker';
 		$this->page_data['page']->menu = 'betting_tracker';
 
-	
+	}
+
+
+	public function index()
+	{
+		$this->load->view('betting_tracker', $this->page_data);
 
 	}
 
@@ -16,3 +22,4 @@ class Betting_tracker extends MY_Controller {
 
 /* End of file Dashboard.php */
 /* Location: ./application/controllers/Dashboard.php */
+
