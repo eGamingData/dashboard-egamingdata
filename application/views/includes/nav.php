@@ -75,7 +75,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
      <span>Darts</span>
     </a>
   </li>
-
   <li <?php echo ($page->menu=='ar')?'class="active"':'' ?>>
     <a href="<?php echo url('dota') ?>">
      <img src="../assets/img/dota-icon.png" width=" 17px" style="margin-right: 5px;"></i> 
@@ -117,10 +116,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </ul>
   </li>
   <?php if ( hasPermissions('betting_tracker') ): ?>
-  <li <?php echo ($page->menu=='betting_tracker')?'class="active"':'' ?>>
-    <a href="<?php echo url('betting_tracker') ?>">
-       <i class="fa fa-bar-chart" aria-hidden="true"></i>
-    </i> <span>Betting tracker</span>
+  <li <?php echo ($page->menu=='tracker')?'class="active"':'' ?>>
+    <a href="<?php echo url('tracker') ?>">
+      <i class="fa fa-bar-chart" aria-hidden="true"></i>
+     <span>Betting Tracker</span>
     </a>
   </li>
   <?php endif ?>

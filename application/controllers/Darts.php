@@ -16,6 +16,7 @@ class Darts extends MY_Controller {
 	public function index()
 	{		
 		$this->page_data['darts'] = $this->darts_model->get();
+		$this->page_data['darts_w'] = $this->darts_model->getDartsWinPerc();
 		$this->load->view('darts/darts', $this->page_data);
 	}
 

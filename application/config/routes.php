@@ -53,5 +53,10 @@ $route['default_controller'] = 'dashboard';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+
+
+
+
 // [AdminLTE]
 $route['adminlte/(:any)'] = 'adminlte/main/$1';
+$route['tracker/tracker_delete'] = 'tracker/tracker_delete';

@@ -71,6 +71,65 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
     <!-- /.box-footer-->
   </div>
 
+  <div class="box">
+    <div class="box-header with-border">
+      <h3 class="box-title"><img class="icon" src="assets/img/podium.svg"> Win Percentage Ranking</h3>
+
+      <div class="box-tools pull-right">
+        <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                title="Collapse">
+          <i class="fa fa-minus"></i></button>
+      </div>
+
+    </div>
+    <div class="box-body">
+      <table id="dataTable2" class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th>Country</th>
+            <th>Matches</th>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Percentage</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <?php foreach ($darts_w as $row): ?>
+            <tr>
+              <td><?php echo $row->rank ?></td>
+              <td>
+                <?php echo $row->player ?>
+              </td>
+              <td>
+                <?php echo $row->country ?>
+              </td>
+              <td>
+                <?php echo $row->matches ?>
+              </td>
+              <td>
+                <?php echo $row->wins ?>
+              </td>
+              <td>
+                <?php echo $row->losses ?>
+              </td>
+              <td>
+                <?php echo $row->percentage ?>
+              </td>
+            </tr>
+          <?php endforeach ?>
+
+        </tbody>
+      </table>
+    </div>
+    <!-- /.box-body -->
+    <div class="box-footer">
+    </div>
+    <!-- /.box-footer-->
+  </div>
+
 
  
 
@@ -81,21 +140,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
 <script>
   $('#dataTable1').DataTable();
-  $('#dataTable2').DataTable({
-        "sDom": 't'
-    });
-  $('#dataTable3').DataTable({
-        "sDom": 't'
-    });
-  $('#dataTable4').DataTable({
-        "sDom": 't'
-    });
-  $('#dataTable5').DataTable({
-        "sDom": 't'
-    });
-  $('#dataTable6').DataTable({
-        "sDom": 't'
-    });
+  $('#dataTable2').DataTable();
 </script>
 
 <script type="application/javascript" src="https://cdn.mfilter.tk/js/mfilter.min.js"></script>
