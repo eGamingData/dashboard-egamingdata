@@ -12,7 +12,7 @@ try{
                         )
                     );
 	
-    $handle = $link->prepare('SELECT team_one,result_team_one, result_tie, team_two, result_team_two, tie_label, data_event FROM lol_models WHERE mo_type="mo_gnk"  AND league="lec"'); 
+    $handle = $link->prepare('SELECT team_one,result_team_one, result_tie, team_two, result_team_two, tie_label, data_event FROM lol_models WHERE mo_type="mo_k"  AND league="lec"'); 
     $handle->execute(); 
     $result = $handle->fetchAll(\PDO::FETCH_OBJ);
 
