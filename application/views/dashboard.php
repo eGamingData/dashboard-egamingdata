@@ -57,7 +57,7 @@ Tweets by @eGamingData
       <div class="small-box bg-aqua lol-box">
         <div class="inner">
           <h3>League of Legends</h3>
-          <p>Last data entry:</p>
+          <p>Last update:</p>
         </div>
         <div class="icon">
         </div>
@@ -72,7 +72,7 @@ Tweets by @eGamingData
       <div class="small-box bg-green darts-box">
         <div class="inner">
           <h3>Darts<sup style="font-size: 20px"></h3>
-          <p>Last data entry:</p>
+          <p>Last update:</p>
         </div>
         <div class="icon">
         </div>
@@ -87,7 +87,7 @@ Tweets by @eGamingData
       <div class="small-box bg-yellow dota-box">
         <div class="inner">
           <h3>Dota</h3>
-          <p>Last data entry:</p>
+          <p>Last update:</p>
         </div>
         <div class="icon">
         </div>
@@ -102,7 +102,7 @@ Tweets by @eGamingData
       <div class="small-box bg-red csgo-box">
         <div class="inner">
           <h3>CS:GO</h3>
-          <p>Last data entry:</p>
+          <p>Last update:</p>
         </div>
         <div class="icon">
         </div>
