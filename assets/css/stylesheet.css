@@ -149,3 +149,85 @@ a.purple{
 .pricing-footer{
   color: black !important;
 }
+
+.lol-box{
+  border-radius: 5px;
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(183, 50, 173, 0.55)
+    ),
+    /* bottom, image */
+    url(https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/06/21/15611361920414.jpg);
+
+  background-size: cover;
+}
+
+.darts-box{
+  border-radius: 5px;
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(183, 50, 173, 0.55)
+    ),
+    /* bottom, image */
+    url(https://darthelp.com/wp-content/uploads/2019/12/Is-Darts-a-Sport.jpg);
+
+  background-size: cover;
+}
+
+.dota-box{
+  border-radius: 5px;
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(183, 50, 173, 0.55)
+    ),
+    /* bottom, image */
+    url(https://estnn.com/wp-content/uploads/2020/06/dota-2-basic-header.jpg);
+
+  background-size: cover;
+}
+
+.csgo-box{
+  border-radius: 5px;
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(183, 50, 173, 0.55)
+    ),
+    /* bottom, image */
+    url(https://www.control.vg/wp-content/uploads/2018/10/csgo-wallpaper-dusty-767x432.jpg);
+
+  background-size: cover;
+}
+
+.small-box  p{
+      margin-top: 1.5rem;
+}
+
+.small-box > .small-box-footer {
+    position: relative;
+    text-align: center;
+    padding: 3px 0;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    height: 5rem; !important 
+}
+
+.twitter-box{
+  height: 50rem;
+}
+
+
+.no-margin-left {
+  padding: 50px 0px 30px 0px !important;
+}
