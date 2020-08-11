@@ -62,7 +62,7 @@ Tweets by @eGamingData
         <div class="icon">
         </div>
         <a href="#" class="small-box-footer">         
-          <p>Search data <i class="fa fa-arrow-circle-right"></i></p> 
+          <p>Browse data <i class="fa fa-arrow-circle-right"></i></p> 
         </a>
       </div>
     </div>
@@ -77,7 +77,7 @@ Tweets by @eGamingData
         <div class="icon">
         </div>
         <a href="#" class="small-box-footer">         
-          <p>Search data <i class="fa fa-arrow-circle-right"></i></p> 
+          <p>Browse data <i class="fa fa-arrow-circle-right"></i></p> 
         </a>
       </div>
     </div>
@@ -92,7 +92,7 @@ Tweets by @eGamingData
         <div class="icon">
         </div>
         <a href="#" class="small-box-footer">         
-          <p>Search data <i class="fa fa-arrow-circle-right"></i></p> 
+          <p>Browse data <i class="fa fa-arrow-circle-right"></i></p> 
         </a>
       </div>
     </div>
@@ -107,7 +107,7 @@ Tweets by @eGamingData
         <div class="icon">
         </div>
         <a href="#" class="small-box-footer">         
-          <p>Search data <i class="fa fa-arrow-circle-right"></i></p> 
+          <p>Browse data <i class="fa fa-arrow-circle-right"></i></p> 
         </a>
       </div>
     </div>

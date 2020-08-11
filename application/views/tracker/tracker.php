@@ -29,6 +29,79 @@ include viewPath('includes/header'); ?>
             <h4><i class="icon fa fa-info"></i> Information!</h4>
            Betting tracker features is under active development and may change in the future, all data inserted will remain on our database even if we add new features to the tracker. If you would like to delete all your records please send an email to support@egamingdata.com with the subject "Tracker removal" and we will manually delete all your betting history.
   </div>
+
+  <div class="row">
+      <div class="col-sm-2">
+        <!-- small box -->
+        <div class="small-box bg-aqua bet-tracker-box">
+          <div class="inner">
+            <h2>Total <sapan class="purple"></span> bets</h2>
+            <h4>345</h4>
+          </div>
+          <div class="icon">
+          </div>         
+        </div>
+        <div class="small-box bg-aqua bet-tracker-box">
+          <div class="inner">
+            <h2>Total <sapan class="purple"></span> bets</h2>
+            <h4>345</h4>
+          </div>
+          <div class="icon">
+          </div>         
+        </div>
+        <div class="small-box bg-aqua bet-tracker-box">
+          <div class="inner">
+            <h2>ROI<sapan class="purple"></span> %</h2>
+            <h4>22.6%</h4>
+          </div>
+          <div class="icon">
+          </div>         
+        </div>
+      </div>
+      <!-- ./col -->
+      <div class="col-sm-2">
+        <!-- small box -->
+        <div class="small-box bg-aqua bet-tracker-box">
+          <div class="inner">
+            <h2>Total <sapan class="purple"></span> profit</h2>
+            <h4>34U</h4>
+          </div>
+          <div class="icon">
+          </div>         
+        </div>
+        <div class="small-box bg-aqua bet-tracker-box">
+          <div class="inner">
+            <h2>Total <sapan class="purple"></span> profit</h2>
+            <h4>34U</h4>
+          </div>
+          <div class="icon">
+          </div>         
+        </div>
+        <div class="small-box bg-aqua bet-tracker-box">
+          <div class="inner">
+            <h2>Avg. <sapan class="purple"></span> bet profit</h2>
+            <h4>1.45U</h4>
+          </div>
+          <div class="icon">
+          </div>         
+        </div>
+      </div>
+      <!-- ./col -->
+      <div class="col-sm-8">
+        <!-- small box -->
+        <div class="small-box bg-yellow bet-tracker-box">
+          <div style="width:75%;"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+    <canvas id="canvas" style="display: block; width: 1217px; height: 345px;" width="1217" height="500" class="chartjs-render-monitor"></canvas>
+  </div>
+         <div class="chart">
+            
+
+          </div>
+        </div>
+      </div>
+      <!-- ./col -->
+  </div>
+
 <div class="box">
     <div class="box-header with-border">
       <h3 class="box-title"><img class="icon" src="assets/img/podium.svg"> Betting history </h3>

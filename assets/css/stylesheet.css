@@ -220,7 +220,7 @@ a.purple{
     z-index: 10;
     background: rgba(0, 0, 0, 0.1);
     text-decoration: none;
-    height: 5rem; !important 
+    height: 5rem; 
 }
 
 .twitter-box{
@@ -230,4 +230,21 @@ a.purple{
 
 .no-margin-left {
   padding: 50px 0px 30px 0px !important;
+}
+
+.bet-tracker-box{
+  border-radius: 5px;
+  background-color: #000000cf !important;
+}
+
+.small-box h2{
+
+  font-size: 20px;
+  
+  font-family: 'arboria-bolduploaded_file';
+}
+
+.small-box h4{
+  
+  font-family: 'arboria-bolduploaded_file';
 }
