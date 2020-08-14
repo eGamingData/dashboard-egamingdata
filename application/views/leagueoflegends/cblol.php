@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
   <!-- LCK Standings box ---------------------------------------------------------------------------------------------------------->
   <div class="box">
     <div class="box-header with-border">
-      <h3 class="box-title"><img class="icon" src="assets/img/podium.svg"> Standings </h3>
+      <h3 class="box-title"><img class="icon" src="../assets/img/podium.svg"> Standings </h3>
 
       <div class="box-tools pull-right">
         <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
@@ -85,7 +85,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
     <div class="col-md-6">
       <div class="box">
     <div class="box-header with-border">
-      <h3 class="box-title"><img class="icon" src="assets/img/dragon-head.svg"> Drake Analytics </h3>
+      <h3 class="box-title"><img class="icon" src="../assets/img/dragon-head.svg"> Drake Analytics </h3>
 
       <div class="box-tools pull-right">
         <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
@@ -137,7 +137,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
     <div class="col-md-6">
       <div class="box">
     <div class="box-header with-border">
-      <h3 class="box-title"><img class="icon" src="assets/img/tower-fall.svg"> Towers Analytics </h3>
+      <h3 class="box-title"><img class="icon" src="../assets/img/tower-fall.svg"> Towers Analytics </h3>
       <div class="box-tools pull-right">
         <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                 title="Collapse">
@@ -192,7 +192,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
     <div class="col-md-6">
       <div class="box">
     <div class="box-header with-border">
-      <h3 class="box-title"><img class="icon" src="assets/img/death-note.svg"> Kill/Death Analytics </h3>
+      <h3 class="box-title"><img class="icon" src="../assets/img/death-note.svg"> Kill/Death Analytics </h3>
 
       <div class="box-tools pull-right">
         <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
@@ -248,7 +248,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
     <div class="col-md-6">
       <div class="box">
     <div class="box-header with-border">
-      <h3 class="box-title"><img class="icon" src="assets/img/two-coins.svg">  Gold Analytics </h3>
+      <h3 class="box-title"><img class="icon" src="../assets/img/two-coins.svg">  Gold Analytics </h3>
 
       <div class="box-tools pull-right">
         <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
@@ -306,7 +306,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!-- LCK Jungle box ----------------------------------------------------------------------------------------------------------------------------->
   <div class="box">
     <div class="box-header with-border">
-      <h3 class="box-title"><img class="icon" src="assets/img/tree-branch.svg"> Jungle Analytics </h3>
+      <h3 class="box-title"><img class="icon" src="../assets/img/tree-branch.svg"> Jungle Analytics </h3>
 
       <div class="box-tools pull-right">
         <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"

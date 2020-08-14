@@ -53,7 +53,17 @@ $route['default_controller'] = 'dashboard';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-
+// [Leagueoflegends]
+$route['league-of-legends'] = 'leagueoflegends/index';
+$route['league-of-legends/lec'] = 'leagueoflegends/lec';
+$route['league-of-legends/lck'] = 'leagueoflegends/lck';
+$route['league-of-legends/lcs'] = 'leagueoflegends/lcs';
+$route['league-of-legends/lpl'] = 'leagueoflegends/lpl';
+$route['league-of-legends/cblol'] = 'leagueoflegends/cblol';
+$route['league-of-legends/ck'] = 'leagueoflegends/ck';
+$route['league-of-legends/pcs'] = 'leagueoflegends/pcs';
+$route['league-of-legends/eum'] = 'leagueoflegends/eum';
+$route['league-of-legends/naa'] = 'leagueoflegends/naa';
 
 
 

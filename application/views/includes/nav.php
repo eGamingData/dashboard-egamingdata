@@ -19,50 +19,55 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </span>
     </a>
     <ul class="treeview-menu">
+      <li <?php echo ($page->submenu=='home')?'class="active"':'' ?>>
+        <a href="<?php echo url('/league-of-legends') ?>">
+          <i class="fa fa-angle-right"></i> Home
+        </a>
+      </li>
       <li <?php echo ($page->submenu=='lck')?'class="active"':'' ?>>
         <a href="<?php echo url('/lck') ?>">
           <i class="fa fa-angle-right"></i> LCK
         </a>
       </li>
        <li <?php echo ($page->submenu=='lec')?'class="active"':'' ?>>
-        <a href="<?php echo url('/lec') ?>">
+        <a href="<?php echo url('/league-of-legends/lec') ?>">
           <i class="fa fa-angle-right"></i> LEC
         </a>
       </li>
        <li <?php echo ($page->submenu=='lcs')?'class="active"':'' ?>>
-        <a href="<?php echo url('/lcs') ?>">
+        <a href="<?php echo url('/league-of-legends/lcs') ?>">
           <i class="fa fa-angle-right"></i> LCS
         </a>
       </li>
       <li <?php echo ($page->submenu=='lpl')?'class="active"':'' ?>>
-        <a href="<?php echo url('/lpl') ?>">
+        <a href="<?php echo url('/league-of-legends/lpl') ?>">
           <i class="fa fa-angle-right"></i> LPL
         </a>        
       </li>
       <li <?php echo ($page->submenu=='cblol')?'class="active"':'' ?>>
-        <a href="<?php echo url('/cblol') ?>">
+        <a href="<?php echo url('/league-of-legends/cblol') ?>">
           <i class="fa fa-angle-right"></i> CBLOL
         </a>        
       </li>
       <li <?php echo ($page->submenu=='ck')?'class="active"':'' ?>>
-        <a href="<?php echo url('/ck') ?>">
+        <a href="<?php echo url('/league-of-legends/ck') ?>">
           <i class="fa fa-angle-right"></i> CK
         </a>        
       </li>
       <li <?php echo ($page->submenu=='pcs')?'class="active"':'' ?>>
-        <a href="<?php echo url('/pcs') ?>">
+        <a href="<?php echo url('/league-of-legends/pcs') ?>">
           <i class="fa fa-angle-right"></i> PCS
         </a>        
       </li>
       <?php if ( hasPermissions('company_settings') ): ?>
       <li <?php echo ($page->submenu=='eum')?'class="active"':'' ?>>
-        <a href="<?php echo url('/eum') ?>">
+        <a href="<?php echo url('/league-of-legends/eum') ?>">
           <i class="fa fa-angle-right"></i> EU Masters
         </a>
       <?php endif ?>
       </li>
       <li <?php echo ($page->submenu=='naa')?'class="active"':'' ?>>
-        <a href="<?php echo url('/naa') ?>">
+        <a href="<?php echo url('/league-of-legends/naa') ?>">
           <i class="fa fa-angle-right"></i> NA Academy
         </a>        
       </li>
