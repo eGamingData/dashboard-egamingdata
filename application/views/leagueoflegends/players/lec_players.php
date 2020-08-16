@@ -6,7 +6,10 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-     <span class="purple"><?php echo ($page->pagetitle)?></span> | <?php echo ($page->subpagetitle)?><small>     
+     <span class="purple"><?php echo ($page->pagetitle)?></span> | <?php echo ($page->subpagetitle)?>
+     <small> 
+     <p> Last Updated: <?php echo $last_update->last_updated?></p>  
+    </small>    
   </h1>
 </section>
 
