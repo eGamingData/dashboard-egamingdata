@@ -69,7 +69,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </li>
               <li <?php echo ($page->subsubmenu=='teams-lcsa')?'class="active"':'' ?>>
                 <a href="<?php echo url('league-of-legends/teams/lcsa') ?>">
-                  <i class="fa fa-angle-right"></i> NA Academy
+                  <i class="fa fa-angle-right"></i> LCS Academy
                 </a>        
               </li>
         </ul>
@@ -124,7 +124,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </li>
               <li <?php echo ($page->subsubmenu=='players-lcsa')?'class="active"':'' ?>>
                 <a href="<?php echo url('league-of-legends/players/lcsa') ?>">
-                  <i class="fa fa-angle-right"></i> NA Academy
+                  <i class="fa fa-angle-right"></i> LCS Academy
                 </a>        
               </li>
         </ul>
@@ -179,7 +179,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </li>
               <li <?php echo ($page->subsubmenu=='champions-lcsa')?'class="active"':'' ?>>
                 <a href="<?php echo url('league-of-legends/champions/lcsa') ?>">
-                  <i class="fa fa-angle-right"></i> NA Academy
+                  <i class="fa fa-angle-right"></i> LCS Academy
                 </a>        
               </li>
         </ul>
