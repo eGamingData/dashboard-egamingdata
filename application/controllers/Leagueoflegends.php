@@ -21,14 +21,23 @@ class Leagueoflegends extends MY_Controller {
 		$this->load->view('leagueoflegends/leagueoflegends', $this->page_data);
 	}
 
-	//Function to load LEC page under League of Legends section.
+	//Function to load Players page under League of Legends section.
+	public function teams()
+	{
+		$this->page_data['page']->title = 'Teams League of Legends Data';
+		$this->page_data['page']->menu = 'leagueoflegends';
+		$this->page_data['page']->submenu = 'teams';
+		$this->page_data['lec'] = $this->lec_model->get();
+		$this->load->view('leagueoflegends/lec', $this->page_data);
+	}
+
 	public function lec()
 	{
 		$this->page_data['page']->title = 'LEC League Data';
 		$this->page_data['page']->menu = 'leagueoflegends';
 		$this->page_data['page']->submenu = 'lec';
 		$this->page_data['lec'] = $this->lec_model->get();
-		$this->load->view('leagueoflegends/lec', $this->page_data);
+		$this->load->view('leagueoflegends/teams/lec', $this->page_data);
 	}
 
 	//Function to load LCK page under League of Legends section.

@@ -1,9 +1,7 @@
-<!-- /.col -->
-    <div class="col-md-6">
+<div class="col-md-6">
       <div class="box">
     <div class="box-header with-border">
-      <h3 class="box-title"><img class="icon" src="assets/img/two-coins.svg">  Gold Analytics </h3>
-
+      <h3 class="box-title"><img class="icon" src="https://dashboard.egamingdata.com/assets/img/tower-fall.svg"> Towers Analytics </h3>
       <div class="box-tools pull-right">
         <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                 title="Collapse">
@@ -12,31 +10,28 @@
 
     </div>
     <div class="box-body">
-      <table id="gold-table" class="table table-bordered table-striped">
+      <table id="tower-table" class="table table-bordered table-striped">
         <thead>
           <tr>
             <th>Team</th>
-            <th>Gold % Rating</th>
-            <th>Avg. Gold Spent Difference</th>
-            <th>Avg. Gold Difference at 15'</th>
+
+            <th>First Tower %</th>
+            <th>First 3 Towers %</th>
           </tr>
         </thead>
         <tbody>
 
-          <?php foreach ($lec as $row): ?>
+          <?php foreach ($teams_data as $row): ?>
             <tr>
-              <td><?php echo $row->Image ?><?php echo $row->Team ?></td>
-
               <td>
-                <?php echo $row->GPR ?>
+                <img style="width: 3rem;margin-right: 2rem;" src="<?php echo $row->Image ?>">
+                <?php echo $row->Team ?>                
+              </td>              
+              <td>
+                <?php echo $row->FT ?>
               </td>
               <td>
-                <?php
-                 echo $row->GSPD ?>
-              </td>
-              <td>
-                <?php
-                 echo $row->GD15 ?>
+                <?php echo $row->F3T ?>
               </td>
             </tr>
           <?php endforeach ?>
@@ -56,3 +51,9 @@
       <!-- /.box -->
     </div>
     <!-- /.col -->
+
+ <script type="text/javascript">
+ 	$('#tower-table').DataTable({
+        "sDom": 't'
+    });
+ </script>

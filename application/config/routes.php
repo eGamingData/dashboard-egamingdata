@@ -55,16 +55,26 @@ $route['translate_uri_dashes'] = FALSE;
 
 // [Leagueoflegends]
 $route['league-of-legends'] = 'leagueoflegends/index';
-$route['league-of-legends/lec'] = 'leagueoflegends/lec';
-$route['league-of-legends/lck'] = 'leagueoflegends/lck';
-$route['league-of-legends/lcs'] = 'leagueoflegends/lcs';
-$route['league-of-legends/lpl'] = 'leagueoflegends/lpl';
-$route['league-of-legends/cblol'] = 'leagueoflegends/cblol';
-$route['league-of-legends/ck'] = 'leagueoflegends/ck';
-$route['league-of-legends/pcs'] = 'leagueoflegends/pcs';
-$route['league-of-legends/eum'] = 'leagueoflegends/eum';
-$route['league-of-legends/naa'] = 'leagueoflegends/naa';
 
+//[LeagueofLegends/teams]
+$route['league-of-legends/teams'] = 'lol_teams/teams';
+$route['league-of-legends/teams/lec'] = 'lol_teams/get_lec_teams';
+$route['league-of-legends/teams/lck'] = 'lol_teams/get_lck_teams';
+$route['league-of-legends/teams/lcs'] = 'lol_teams/get_lcs_teams';
+$route['league-of-legends/teams/lpl'] = 'lol_teams/get_lpl_teams';
+$route['league-of-legends/teams/cblol'] = 'lol_teams/get_cblol_teams';
+$route['league-of-legends/teams/ck'] = 'lol_teams/get_ck_teams';
+$route['league-of-legends/teams/pcs'] = 'lol_teams/get_pcs_teams';
+$route['league-of-legends/teams/eum'] = 'lol_teams/get_eum_teams';
+$route['league-of-legends/teams/naa'] = 'lol_teams/get_lcsa_teams';
+
+//[LeagueofLegends/players]
+$route['league-of-legends/players'] = 'lol_players/players';
+$route['league-of-legends/players/lec'] = 'lol_players/lec_players';
+
+//[LeagueofLegends/champions]
+$route['league-of-legends/champions'] = 'lol_champions/champions';
+$route['league-of-legends/champions/lec'] = 'lol_champions/lec_champions';
 
 
 // [AdminLTE]

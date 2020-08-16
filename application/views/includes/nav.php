@@ -12,67 +12,182 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <?php if (hasPermissions('league_of_legends')): ?>
  <li class="treeview <?php echo ($page->menu=='leagueoflegends')?'active':'' ?>">
     <a href="#">
-      <img src="../assets/img/lol-icon.png" width=" 16px" style="margin-right: 5px;">
+      <img src="https://dashboard.egamingdata.com/assets/img/lol-icon.png" width=" 16px" style="margin-right: 5px;">
       <span>League of Legends</span>
       <span class="pull-right-container">
         <i class="fa fa-angle-left pull-right"></i>
       </span>
     </a>
     <ul class="treeview-menu">
-      <li <?php echo ($page->submenu=='home')?'class="active"':'' ?>>
-        <a href="<?php echo url('/league-of-legends') ?>">
-          <i class="fa fa-angle-right"></i> Home
+      <!-- LEAGUE OF LEGENDS TEAMS SECTION -->
+        <li class="treeview <?php echo ($page->submenu=='lol-teams')?'active':'' ?>">
+        <a href="#">
+          <i class="fa fa-angle-right"></i> Teams
         </a>
+            <ul class="treeview-menu">
+               <li <?php echo ($page->subsubmenu=='teams-lck')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/teams/lck') ?>">
+                  <i class="fa fa-angle-right"></i> LCK
+                </a>
+              </li>
+               <li <?php echo ($page->subsubmenu=='teams-lec')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/teams/lec') ?>">
+                  <i class="fa fa-angle-right"></i> LEC
+                </a>
+              </li>
+               <li <?php echo ($page->subsubmenu=='teams-lcs')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/teams/lcs') ?>">
+                  <i class="fa fa-angle-right"></i> LCS
+                </a>
+              </li>
+              <li <?php echo ($page->subsubmenu=='teams-lpl')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/teams/lpl') ?>">
+                  <i class="fa fa-angle-right"></i> LPL
+                </a>        
+              </li>
+              <li <?php echo ($page->subsubmenu=='teams-cblol')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/teams/cblol') ?>">
+                  <i class="fa fa-angle-right"></i> CBLOL
+                </a>        
+              </li>
+              <li <?php echo ($page->subsubmenu=='teams-ck')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/teams/ck') ?>">
+                  <i class="fa fa-angle-right"></i> CK
+                </a>        
+              </li>
+              <li <?php echo ($page->subsubmenu=='teams-pcs')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/teams/pcs') ?>">
+                  <i class="fa fa-angle-right"></i> PCS
+                </a>        
+              </li>
+              <?php if ( hasPermissions('company_settings') ): ?>
+              <li <?php echo ($page->subsubmenu=='teams-eum')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/teams/eum') ?>">
+                  <i class="fa fa-angle-right"></i> EU Masters
+                </a>
+              <?php endif ?>
+              </li>
+              <li <?php echo ($page->subsubmenu=='teams-lcsa')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/teams/lcsa') ?>">
+                  <i class="fa fa-angle-right"></i> NA Academy
+                </a>        
+              </li>
+        </ul>
       </li>
-      <li <?php echo ($page->submenu=='lck')?'class="active"':'' ?>>
-        <a href="<?php echo url('/lck') ?>">
-          <i class="fa fa-angle-right"></i> LCK
+      <!-- LEAGUE OF LEGENDS PLAYERS SECTION -->
+      <li class="treeview <?php echo ($page->submenu=='lol-players')?'active':'' ?>">
+        <a href="<?php echo url('predictions') ?>">
+          <i class="fa fa-angle-right"></i> Players
         </a>
+            <ul class="treeview-menu">
+               <li <?php echo ($page->subsubmenu=='players-lck')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/players/lck') ?>">
+                  <i class="fa fa-angle-right"></i> LCK
+                </a>
+              </li>
+               <li <?php echo ($page->subsubmenu=='players-lec')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/players/lec') ?>">
+                  <i class="fa fa-angle-right"></i> LEC
+                </a>
+              </li>
+               <li <?php echo ($page->subsubmenu=='players-lcs')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/players/lcs') ?>">
+                  <i class="fa fa-angle-right"></i> LCS
+                </a>
+              </li>
+              <li <?php echo ($page->subsubmenu=='players-lpl')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/players/lpl') ?>">
+                  <i class="fa fa-angle-right"></i> LPL
+                </a>        
+              </li>
+              <li <?php echo ($page->subsubmenu=='players-cblol')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/players/cblol') ?>">
+                  <i class="fa fa-angle-right"></i> CBLOL
+                </a>        
+              </li>
+              <li <?php echo ($page->subsubmenu=='players-ck')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/players/ck') ?>">
+                  <i class="fa fa-angle-right"></i> CK
+                </a>        
+              </li>
+              <li <?php echo ($page->subsubmenu=='players-pcs')?'class="active"':'' ?>>
+                <a href="<?php echo url('/pcs') ?>">
+                  <i class="fa fa-angle-right"></i> PCS
+                </a>        
+              </li>
+              <?php if ( hasPermissions('company_settings') ): ?>
+              <li <?php echo ($page->subsubmenu=='players-eum')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/players/eum') ?>">
+                  <i class="fa fa-angle-right"></i> EU Masters
+                </a>
+              <?php endif ?>
+              </li>
+              <li <?php echo ($page->subsubmenu=='players-lcsa')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/players/lcsa') ?>">
+                  <i class="fa fa-angle-right"></i> NA Academy
+                </a>        
+              </li>
+        </ul>
       </li>
-       <li <?php echo ($page->submenu=='lec')?'class="active"':'' ?>>
-        <a href="<?php echo url('/league-of-legends/lec') ?>">
-          <i class="fa fa-angle-right"></i> LEC
+      <!-- LEAGUE OF LEGENDS CHAMPIONS SECTION -->
+       <li class="treeview <?php echo ($page->submenu=='lol-champions')?'active':'' ?>">
+        <a href="<?php echo url('predictions') ?>">
+          <i class="fa fa-angle-right"></i> Champions
         </a>
-      </li>
-       <li <?php echo ($page->submenu=='lcs')?'class="active"':'' ?>>
-        <a href="<?php echo url('/league-of-legends/lcs') ?>">
-          <i class="fa fa-angle-right"></i> LCS
-        </a>
-      </li>
-      <li <?php echo ($page->submenu=='lpl')?'class="active"':'' ?>>
-        <a href="<?php echo url('/league-of-legends/lpl') ?>">
-          <i class="fa fa-angle-right"></i> LPL
-        </a>        
-      </li>
-      <li <?php echo ($page->submenu=='cblol')?'class="active"':'' ?>>
-        <a href="<?php echo url('/league-of-legends/cblol') ?>">
-          <i class="fa fa-angle-right"></i> CBLOL
-        </a>        
-      </li>
-      <li <?php echo ($page->submenu=='ck')?'class="active"':'' ?>>
-        <a href="<?php echo url('/league-of-legends/ck') ?>">
-          <i class="fa fa-angle-right"></i> CK
-        </a>        
-      </li>
-      <li <?php echo ($page->submenu=='pcs')?'class="active"':'' ?>>
-        <a href="<?php echo url('/league-of-legends/pcs') ?>">
-          <i class="fa fa-angle-right"></i> PCS
-        </a>        
-      </li>
-      <?php if ( hasPermissions('company_settings') ): ?>
-      <li <?php echo ($page->submenu=='eum')?'class="active"':'' ?>>
-        <a href="<?php echo url('/league-of-legends/eum') ?>">
-          <i class="fa fa-angle-right"></i> EU Masters
-        </a>
-      <?php endif ?>
-      </li>
-      <li <?php echo ($page->submenu=='naa')?'class="active"':'' ?>>
-        <a href="<?php echo url('/league-of-legends/naa') ?>">
-          <i class="fa fa-angle-right"></i> NA Academy
-        </a>        
+            <ul class="treeview-menu">
+               <li <?php echo ($page->subsubmenu=='champions-lck')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/champions/lck') ?>">
+                  <i class="fa fa-angle-right"></i> LCK
+                </a>
+              </li>
+               <li <?php echo ($page->subsubmenu=='champions-lec')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/champions/lec') ?>">
+                  <i class="fa fa-angle-right"></i> LEC
+                </a>
+              </li>
+               <li <?php echo ($page->subsubmenu=='champions-lcs')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/champions/lcs') ?>">
+                  <i class="fa fa-angle-right"></i> LCS
+                </a>
+              </li>
+              <li <?php echo ($page->subsubmenu=='champions-lpl')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/champions/lpl') ?>">
+                  <i class="fa fa-angle-right"></i> LPL
+                </a>        
+              </li>
+              <li <?php echo ($page->subsubmenu=='champions-cblol')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/champions/cblol') ?>">
+                  <i class="fa fa-angle-right"></i> CBLOL
+                </a>        
+              </li>
+              <li <?php echo ($page->subsubmenu=='champions-ck')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/champions/ck') ?>">
+                  <i class="fa fa-angle-right"></i> CK
+                </a>        
+              </li>
+              <li <?php echo ($page->subsubmenu=='champions-pcs')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/champions/pcs') ?>">
+                  <i class="fa fa-angle-right"></i> PCS
+                </a>        
+              </li>
+              <?php if ( hasPermissions('company_settings') ): ?>
+              <li <?php echo ($page->subsubmenu=='champions-eum')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/champions/eum') ?>">
+                  <i class="fa fa-angle-right"></i> EU Masters
+                </a>
+              <?php endif ?>
+              </li>
+              <li <?php echo ($page->subsubmenu=='champions-lcsa')?'class="active"':'' ?>>
+                <a href="<?php echo url('league-of-legends/champions/lcsa') ?>">
+                  <i class="fa fa-angle-right"></i> NA Academy
+                </a>        
+              </li>
+        </ul>
       </li>
     </ul>
   </li>
+
+
 <?php endif ?>
 <li <?php echo ($page->menu=='darts')?'class="active"':'' ?>>
     <a href="<?php echo url('darts') ?>">
@@ -80,16 +195,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
      <span>Darts</span>
     </a>
   </li>
+
+
   <li <?php echo ($page->menu=='ar')?'class="active"':'' ?>>
     <a href="<?php echo url('dota') ?>">
-     <img src="../assets/img/dota-icon.png" width=" 17px" style="margin-right: 5px;"></i> 
+     <img src="https://dashboard.egamingdata.com/assets/img/dota-icon.png" width=" 17px" style="margin-right: 5px;"></i> 
      <span>Dota</span>
     </a>
   </li>
 
   <li <?php echo ($page->menu=='csgo')?'class="active"':'' ?>>
     <a href="<?php echo url('csgo') ?>">
-     <img src="../assets/img/csgo-icon.png" width=" 17px" style="margin-right: 5px;"></i> 
+     <img src="https://dashboard.egamingdata.com/assets/img/csgo-icon.png" width=" 17px" style="margin-right: 5px;"></i> 
      <span>CS:GO</span>
     </a>
   </li>

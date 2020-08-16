@@ -1,5 +1,4 @@
 <?php
-$league = 'League of Legends';
 
 /** QUERY TO GET LAST UPDATE **/
 $query = $this->db->query('SELECT * FROM pcs WHERE Team="Alpha Esports"');
@@ -13,8 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-     <span class="purple"><?php echo $league ?></span> Data      <small> 
-    
+     <span class="purple"><?php echo ($page->pagetitle)?></span> | <?php echo ($page->subpagetitle)?><small>     
   </h1>
 </section>
 
