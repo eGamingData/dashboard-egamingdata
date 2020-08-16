@@ -66,11 +66,19 @@ $route['league-of-legends/teams/cblol'] = 'lol_teams/get_cblol_teams';
 $route['league-of-legends/teams/ck'] = 'lol_teams/get_ck_teams';
 $route['league-of-legends/teams/pcs'] = 'lol_teams/get_pcs_teams';
 $route['league-of-legends/teams/eum'] = 'lol_teams/get_eum_teams';
-$route['league-of-legends/teams/naa'] = 'lol_teams/get_lcsa_teams';
+$route['league-of-legends/teams/lcsa'] = 'lol_teams/get_lcsa_teams';
 
 //[LeagueofLegends/players]
 $route['league-of-legends/players'] = 'lol_players/players';
-$route['league-of-legends/players/lec'] = 'lol_players/lec_players';
+$route['league-of-legends/players/lec'] = 'lol_players/get_lec_players';
+$route['league-of-legends/players/lcs'] = 'lol_players/get_lcs_players';
+$route['league-of-legends/players/lck'] = 'lol_players/get_lck_players';
+$route['league-of-legends/players/pcs'] = 'lol_players/get_pcs_players';
+$route['league-of-legends/players/lpl'] = 'lol_players/get_lpl_players';
+$route['league-of-legends/players/ck'] = 'lol_players/get_ck_players';
+$route['league-of-legends/players/cblol'] = 'lol_players/get_cblol_players';
+$route['league-of-legends/players/lcsa'] = 'lol_players/get_lcsa_players';
+$route['league-of-legends/players/eum'] = 'lol_players/get_eum_players';
 
 //[LeagueofLegends/champions]
 $route['league-of-legends/champions'] = 'lol_champions/champions';

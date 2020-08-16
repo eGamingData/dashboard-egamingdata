@@ -20,15 +20,6 @@ class Lol_teams extends MY_Controller {
 		$this->load->view('leagueoflegends/leagueoflSegends', $this->page_data);
 	}
 
-	public function read() 
-	{
-    $object['controller'] = $this; 
-    $this->load->view('read', $object);
-	}
-
-
-
-
 	//Function to load LEC Teams on lec_teams.php
 	public function get_lec_teams()
 	{
@@ -38,9 +29,6 @@ class Lol_teams extends MY_Controller {
 		$this->page_data['page']->subpagetitle = 'Teams Data'; //Page main end title
 		$this->page_data['page']->menu = 'leagueoflegends'; //Menu level 
 		$this->page_data['page']->submenu = 'lol-teams'; //Submenu level
-		$this->page_data['page']->subsubmenu = 'teams-' . $league;//3rd menu level (subsubmenu)
-
-		$this->page_data['images'] = $this->utils_model->getDbImage();
 
 		$this->page_data['league_info'] = $this->lol_general_model->getLeagueInfo($league);//Get league info, like name, image, datapoints...
 

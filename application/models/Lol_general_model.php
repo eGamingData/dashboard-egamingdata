@@ -14,6 +14,11 @@ class Lol_general_model extends MY_Model {
 		return $this->db->get_where('lol_leagues', array('league'=> $league))->row();	
 	}
 
+	public function getLeagueLongName($league)
+	{
+		return $this->db->select('league_name')->where('league', $league)->get('lol_leagues')->row();
+	}
+
 }
 
 /* End of file Roles_model.php */

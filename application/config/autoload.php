@@ -144,6 +144,7 @@ $autoload['model'] = array(
 	'predictions_model',
 	'darts_model',
 	'lol_teams_model',
+	'lol_players_model',
 	'lol_general_model',
 	'utils_model',
 );
