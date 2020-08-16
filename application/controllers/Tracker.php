@@ -13,6 +13,7 @@ class Tracker extends MY_Controller {
 
 	}
 
+
 	public function index()
 	{
 	     if(!empty($_POST)){
@@ -33,6 +34,17 @@ class Tracker extends MY_Controller {
 	     }else{
 	    
 			$this->page_data['result'] = $this->tracker_model->tracker_select();
+
+			$this->page_data['total_bets'] = $this->tracker_model->getTotalBets();//Gets total amount of bets for the user.
+			$this->page_data['total_profit'] = $this->tracker_model->getTotalProfitByUser();//Gets total profit made by the user.
+			$this->page_data['bets_won'] = $this->tracker_model->getBetsWonByUser();//Gets total bets won by user.
+			$this->page_data['bets_lost'] = $this->tracker_model->getBetsLostByUser();//Gets total bets Lost by user.
+			$this->page_data['win_perc'] = $this->tracker_model->getWinPercentage();//Gets win percentage by user.
+			$this->page_data['avg_bet_profit'] = $this->tracker_model->getAvgBetProfit();//Gets Average bet profit .
+
+
+
+
 		
 	
 		$this->load->view('tracker/tracker', $this->page_data);

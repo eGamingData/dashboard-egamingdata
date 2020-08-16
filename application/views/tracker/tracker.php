@@ -36,23 +36,23 @@ include viewPath('includes/header'); ?>
         <div class="small-box bg-aqua bet-tracker-box">
           <div class="inner">
             <h2>Total <sapan class="purple"></span> bets</h2>
-            <h4>345</h4>
+            <h4><?php echo ($total_bets)?></h4>
           </div>
           <div class="icon">
           </div>         
         </div>
         <div class="small-box bg-aqua bet-tracker-box">
           <div class="inner">
-            <h2>Total <sapan class="purple"></span> bets</h2>
-            <h4>345</h4>
+            <h2>Bets <sapan class="purple"></span> won</h2>
+            <h4><?php echo ($bets_won)?></h4>
           </div>
           <div class="icon">
           </div>         
         </div>
         <div class="small-box bg-aqua bet-tracker-box">
           <div class="inner">
-            <h2>ROI<sapan class="purple"></span> %</h2>
-            <h4>22.6%</h4>
+            <h2>Win<sapan class="purple"></span> %</h2>
+             <h4><?php echo ($win_perc)?></h4>
           </div>
           <div class="icon">
           </div>         
@@ -64,23 +64,23 @@ include viewPath('includes/header'); ?>
         <div class="small-box bg-aqua bet-tracker-box">
           <div class="inner">
             <h2>Total <sapan class="purple"></span> profit</h2>
-            <h4>34U</h4>
+            <h4><?php echo ($total_profit)?></h4>
           </div>
           <div class="icon">
           </div>         
         </div>
         <div class="small-box bg-aqua bet-tracker-box">
           <div class="inner">
-            <h2>Total <sapan class="purple"></span> profit</h2>
-            <h4>34U</h4>
+           <h2>Bets <sapan class="purple"></span> lost</h2>
+             <h4><?php echo ($bets_lost)?></h4>
           </div>
           <div class="icon">
           </div>         
         </div>
         <div class="small-box bg-aqua bet-tracker-box">
           <div class="inner">
-            <h2>Avg. <sapan class="purple"></span> bet profit</h2>
-            <h4>1.45U</h4>
+            <h2>Avg. <sapan class="purple"></span> bet outcome</h2>
+            <h4><?php echo ($avg_bet_profit)?></h4>
           </div>
           <div class="icon">
           </div>         
