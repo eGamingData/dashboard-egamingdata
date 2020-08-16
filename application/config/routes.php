@@ -82,8 +82,15 @@ $route['league-of-legends/players/eum'] = 'lol_players/get_eum_players';
 
 //[LeagueofLegends/champions]
 $route['league-of-legends/champions'] = 'lol_champions/champions';
-$route['league-of-legends/champions/lec'] = 'lol_champions/lec_champions';
-
+$route['league-of-legends/champions/lec'] = 'lol_champions/get_lec_champions';
+$route['league-of-legends/champions/lcs'] = 'lol_champions/get_lcs_champions';
+$route['league-of-legends/champions/lck'] = 'lol_champions/get_lck_champions';
+$route['league-of-legends/champions/lpl'] = 'lol_champions/get_lpl_champions';
+$route['league-of-legends/champions/cblol'] = 'lol_champions/get_cblol_champions';
+$route['league-of-legends/champions/ck'] = 'lol_champions/get_ck_champions';
+$route['league-of-legends/champions/pcs'] = 'lol_champions/get_pcs_champions';
+$route['league-of-legends/champions/lcsa'] = 'lol_champions/get_lcsa_champions';
+$route['league-of-legends/champions/eum'] = 'lol_champions/get_eum_champions';
 
 // [AdminLTE]
 $route['adminlte/(:any)'] = 'adminlte/main/$1';
