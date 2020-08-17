@@ -54,7 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // [Leagueoflegends]
-$route['league-of-legends'] = 'leagueoflegends/index';
+$route['league-of-legends/general'] = 'leagueoflegends/index';
 
 //[LeagueofLegends/teams]
 $route['league-of-legends/teams'] = 'lol_teams/teams';

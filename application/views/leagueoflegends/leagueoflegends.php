@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-     <span class="purple"><?php echo $league ?></span> Data      <small> 
+     <span class="purple"><?php echo $league ?></span> Data<small> 
     
   </h1>
 </section>

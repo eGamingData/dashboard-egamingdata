@@ -10,6 +10,7 @@ class Predictions_model extends MY_Model {
 		parent::__construct();
 	}
 
+
 }
 
 /* End of file Leagueoflegends_model.php */

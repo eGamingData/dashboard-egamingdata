@@ -15,7 +15,6 @@ class Lec_predictions extends MY_Controller {
 
 	public function index()
 	{		
-
 		
 		$this->load->view('predictions/lec/lec_predictions.php', $this->page_data);
 	}

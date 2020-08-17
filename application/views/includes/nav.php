@@ -19,6 +19,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </span>
     </a>
     <ul class="treeview-menu">
+      <li class="treeview <?php echo ($page->submenu=='lol-general')?'active':'' ?>">
+        <a href="#">
+          <i class="fa fa-angle-right"></i> General
+        </a>
+      </li>
       <!-- LEAGUE OF LEGENDS TEAMS SECTION -->
         <li class="treeview <?php echo ($page->submenu=='lol-teams')?'active':'' ?>">
         <a href="#">

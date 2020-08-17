@@ -19,6 +19,9 @@ class Predictions extends MY_Controller {
 		$this->load->view('predictions/predictions', $this->page_data);
 	}
 
+
+	
+
 }
 
 /* End of file Permissions.php */
