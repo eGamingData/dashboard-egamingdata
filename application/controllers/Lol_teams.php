@@ -17,7 +17,7 @@ class Lol_teams extends MY_Controller {
 	public function index()
 	{		
 		$this->page_data['lcs'] = $this->lcs_model->get();
-		$this->load->view('leagueoflegends/leagueoflSegends', $this->page_data);
+		$this->load->view('leagueoflegends/leagueoflegends', $this->page_data);
 	}
 
 	//Function to load LEC Teams on lec_teams.php
@@ -28,7 +28,8 @@ class Lol_teams extends MY_Controller {
 		$this->page_data['page']->pagetitle = 'League European Championship'; //Page main title
 		$this->page_data['page']->subpagetitle = 'Teams Data'; //Page main end title
 		$this->page_data['page']->menu = 'leagueoflegends'; //Menu level 
-		$this->page_data['page']->submenu = 'lol-teams'; //Submenu level
+		$this->page_data['page']->submenu = 'lol-teams';
+		$this->page_data['page']->subsubmenu = 'teams-' . $league;//3rd menu level (subsubmenu)
 
 		$this->page_data['league_info'] = $this->lol_general_model->getLeagueInfo($league);//Get league info, like name, image, datapoints...
 

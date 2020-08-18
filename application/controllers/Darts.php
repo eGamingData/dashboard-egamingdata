@@ -19,7 +19,7 @@ class Darts extends MY_Controller {
 		$this->page_data['darts_w'] = $this->darts_model->getDartsWinPerc();
 		$this->load->view('darts/darts', $this->page_data);
 	}
-
+	
 }
 
 /* End of file Permissions.php */

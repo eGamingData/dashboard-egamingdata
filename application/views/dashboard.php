@@ -61,7 +61,7 @@ Tweets by @eGamingData
         </div>
         <div class="icon">
         </div>
-        <a href="#" class="small-box-footer">         
+        <a href="/league-of-legends/general" class="small-box-footer">         
           <p>Browse data <i class="fa fa-arrow-circle-right"></i></p> 
         </a>
       </div>

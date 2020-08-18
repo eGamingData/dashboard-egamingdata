@@ -20,18 +20,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </a>
     <ul class="treeview-menu">
       <li class="treeview <?php echo ($page->submenu=='lol-general')?'active':'' ?>">
-        <a href="#">
-          <i class="fa fa-angle-right"></i> General
+        <a href="<?php echo url('league-of-legends/general') ?>">
+          <i class="fa fa-list-alt"></i> General
         </a>
       </li>
       <!-- LEAGUE OF LEGENDS TEAMS SECTION -->
         <li class="treeview <?php echo ($page->submenu=='lol-teams')?'active':'' ?>">
         <a href="#">
-          <i class="fa fa-angle-right"></i> Teams
+          <i class="fa fa-users"></i> Teams
+          <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+      </span>
+
         </a>
+
             <ul class="treeview-menu">
                <li <?php echo ($page->subsubmenu=='teams-lck')?'class="active"':'' ?>>
-                <a href="<?php echo url('league-of-legends/teams/lck') ?>">
+                <a href="<?php echo url('league-of-legends/teams/lck') ?>">        
                   <i class="fa fa-angle-right"></i> LCK
                 </a>
               </li>
@@ -82,7 +87,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <!-- LEAGUE OF LEGENDS PLAYERS SECTION -->
       <li class="treeview <?php echo ($page->submenu=='lol-players')?'active':'' ?>">
         <a href="<?php echo url('predictions') ?>">
-          <i class="fa fa-angle-right"></i> Players
+          <i class="fa fa-user"></i> Players
+          <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+      </span>
         </a>
             <ul class="treeview-menu">
                <li <?php echo ($page->subsubmenu=='players-lck')?'class="active"':'' ?>>
@@ -137,7 +145,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <!-- LEAGUE OF LEGENDS CHAMPIONS SECTION -->
        <li class="treeview <?php echo ($page->submenu=='lol-champions')?'active':'' ?>">
         <a href="<?php echo url('predictions') ?>">
-          <i class="fa fa-angle-right"></i> Champions
+          <i class="fa fa-star"></i> Champions
+          <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+      </span>
         </a>
             <ul class="treeview-menu">
                <li <?php echo ($page->subsubmenu=='champions-lck')?'class="active"':'' ?>>

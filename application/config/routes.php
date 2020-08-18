@@ -92,6 +92,10 @@ $route['league-of-legends/champions/pcs'] = 'lol_champions/get_pcs_champions';
 $route['league-of-legends/champions/lcsa'] = 'lol_champions/get_lcsa_champions';
 $route['league-of-legends/champions/eum'] = 'lol_champions/get_eum_champions';
 
+
+// [Darts]
+$route['darts/general'] = 'darts/index';
+
 // [AdminLTE]
 $route['adminlte/(:any)'] = 'adminlte/main/$1';
 $route['tracker/tracker_delete'] = 'tracker/tracker_delete';
