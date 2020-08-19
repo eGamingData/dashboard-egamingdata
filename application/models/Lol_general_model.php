@@ -9,6 +9,11 @@ class Lol_general_model extends MY_Model {
 		parent::__construct();
 	}
 
+	function getAllLeaguesInfo()
+	{
+		return $this->db->get('lol_leagues');
+	}
+
 	function getLeagueInfo($league)
 	{
 		return $this->db->get_where('lol_leagues', array('league'=> $league))->row();	

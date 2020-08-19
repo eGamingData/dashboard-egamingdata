@@ -16,21 +16,17 @@ class Leagueoflegends extends MY_Controller {
 	//Home page for League of Legends section.
 	public function index()
 	{		
-		$this->page_data['page']->title = 'General League of Legends Data';
+		
+		$this->page_data['page']->title = ' League of Legends Data'; // Header title
+		$this->page_data['page']->pagetitle = 'League of Legends'; //Page main title
+		$this->page_data['page']->subpagetitle = 'Champions Data'; //Page main end title
 		$this->page_data['page']->menu = 'leagueoflegends';
 		$this->page_data['page']->submenu = 'lol-general';
+		$this->page_data['leagues_info'] = $this->lol_general_model->getLeagueInfo('lec');
 		$this->load->view('leagueoflegends/leagueoflegends', $this->page_data);
 	}
 
-	//Function to load Players page under League of Legends section.
-	public function teams()
-	{
-		$this->page_data['page']->title = 'Teams League of Legends Data';
-		$this->page_data['page']->menu = 'leagueoflegends';
-		$this->page_data['page']->submenu = 'teams';
-		$this->page_data['lec'] = $this->lec_model->get();
-		$this->load->view('leagueoflegends/lec', $this->page_data);
-	}	
+
 
 }
 
