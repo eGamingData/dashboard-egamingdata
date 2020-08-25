@@ -22,9 +22,11 @@ class Leagueoflegends extends MY_Controller {
 		$this->page_data['page']->subpagetitle = 'Champions Data'; //Page main end title
 		$this->page_data['page']->menu = 'leagueoflegends';
 		$this->page_data['page']->submenu = 'lol-general';
-		$this->page_data['leagues_info'] = $this->lol_general_model->getLeagueInfo('lec');
+		$this->page_data['leagues_info'] = $this->lol_general_model->getAllLeaguesInfo();
 		$this->load->view('leagueoflegends/leagueoflegends', $this->page_data);
 	}
+
+
 
 
 

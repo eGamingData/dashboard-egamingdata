@@ -14,7 +14,24 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
 <!-- Main content -->
 <section class="content">
-
+	<div class="row">
+    <div class="col-md-4">
+      <!-- Widget: user widget style 1 -->
+      <?php include 'includes/leagues_overview.php'; ?>
+      <!-- /.widget-user -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-4">
+      
+      <!-- /.widget-user -->
+    </div>
+    <!-- /.col -->
+    <div class="col-md-4">
+      
+      <!-- /.widget-user -->
+    </div>
+    <!-- /.col -->
+  </div>
 
 </section>
 <!-- /.content -->

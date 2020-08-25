@@ -27,6 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <div class="box">
     <div class="box-header with-border">
       <h3 class="box-title"><img class="icon" src="assets/img/podium.svg"> 180s Ranking</h3>
+      <a><?php echo $best_180 ?></a>
 
       <div class="box-tools pull-right">
         <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"

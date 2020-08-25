@@ -3,7 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Lol_general_model extends MY_Model {
 
-
 	public function __construct()
 	{
 		parent::__construct();
@@ -11,7 +10,7 @@ class Lol_general_model extends MY_Model {
 
 	function getAllLeaguesInfo()
 	{
-		return $this->db->get('lol_leagues');
+		return $this->db->get('lol_leagues')->result();
 	}
 
 	function getLeagueInfo($league)
