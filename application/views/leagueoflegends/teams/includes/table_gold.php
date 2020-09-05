@@ -12,7 +12,7 @@
 
     </div>
     <div class="box-body">
-      <table id="gold-table" class="table table-bordered table-striped">
+      <table id="gold-table" class="table table-bordered table-striped" width="100%">
         <thead>
           <tr>
             <th>Team</th>

@@ -5079,7 +5079,6 @@ table.text-center th {
 }
 .sidebar-menu > li > a {
   border-left: 3px solid transparent;
-  padding: 15px 20px;
 }
 .sidebar-menu > li:hover > a,
 .sidebar-menu > li.active > a,

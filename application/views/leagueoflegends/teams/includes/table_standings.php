@@ -11,7 +11,7 @@
 
     </div>
     <div class="box-body">
-      <table id="standings-table" class="table table-bordered table-striped">
+      <table id="standings-table" class="table table-bordered table-striped" width="100%">
         <thead>
           <tr>
             <th>Team</th>

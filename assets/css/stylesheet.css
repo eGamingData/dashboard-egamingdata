@@ -206,6 +206,20 @@ a.purple{
   background-size: cover;
 }
 
+.fantasy-box{
+  border-radius: 5px;
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(183, 50, 173, 0.55)
+    ),
+    /* bottom, image */
+    url(https://static.invenglobal.com/upload/image/2019/12/25/o1577304864000458.png);
+
+  background-size: cover;
+}
+
 .small-box  p{
       margin-top: 1.5rem;
 }
@@ -270,4 +284,21 @@ a.purple{
     background-color: #ffffff;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+.no-drop-border{
+  border-color: transparent !important;
+}
+
+.test {
+    overflow: hidden; /* add this to contain floated children */
+}
+.first {
+    
+    float:left; /* add this */
+}
+.second {
+
+    margin-left: 10px;
+    float: left; /* add this */
 }

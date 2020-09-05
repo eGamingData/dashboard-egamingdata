@@ -1,6 +1,7 @@
+<div class="col-md-6">
 <div class="box">
     <div class="box-header with-border">
-      <h3 class="box-title"><img class="icon" src="https://dashboard.egamingdata.com/assets/img/podium.svg"> General </h3>
+      <h3 class="box-title"><img class="icon" src="https://dashboard.egamingdata.com/assets/img/death-note.svg"> Kills/Deaths  </h3>
 
 
       <div class="box-tools pull-right">
@@ -11,15 +12,13 @@
 
     </div>
     <div class="box-body">
-      <table id="general-table" class="table table-bordered table-striped" width="100%">
+      <table id="kda-table" class="table table-bordered table-striped" width="100%">
         <thead>
           <tr>
-          	<th>Player</th>
+            <th>Player</th>
             <th>Team</th>
             <th>Position</th>
             <th>GP</th>
-            <th>Win</th>
-            <th>CTR</th>
             <th>K</th>
             <th>D</th>
             <th>A</th>
@@ -28,23 +27,13 @@
             <th>KS</th>            
             <th>DTH</th>
             <th>FB</th>
-            <th>GD10</th>
-            <th>XPD10</th>
-            <th>CSD10</th>
-            <th>CSPM</th>
-            <th>CSP15</th>
-            <th>DPM</th>
-            <th>DMG</th>
-            <th>GOLD</th>
-            <th>WPM</th>
-            <th>WPCM</th>
           </tr>
         </thead>
         <tbody>
 
           <?php foreach ($players_data as $row): ?>
-            <tr >
-            	<td >
+            <tr>
+              <td>
                 <?php echo $row->Player ?>
               </td>
               <td>
@@ -55,12 +44,6 @@
               </td>
               <td>
                 <?php echo $row->GP ?>
-              </td>
-              <td>
-                <?php echo $row->W ?>
-              </td>
-              <td>
-                <?php echo $row->CTR ?>
               </td>
               <td>
                 <?php echo $row->K ?>
@@ -85,38 +68,7 @@
               </td>
               <td>
                 <?php echo $row->FB ?>
-              </td>
-              <td>
-                <?php echo $row->GD10 ?>
-              </td>
-              <td>
-                <?php echo $row->XPD10 ?>
-              </td>
-              <td>
-                <?php echo $row->CSD10 ?>
-              </td>
-              <td>
-                <?php echo $row->CSPM ?>
-              </td>
-              <td>
-                <?php echo $row->CSP15 ?>
-              </td>
-              <td>
-                <?php echo $row->DPM ?>
-              </td>
-              <td>
-                <?php echo $row->DMG ?>
-              </td>
-              <td>
-                <?php echo $row->GOLD ?>
-              </td>
-              <td>
-                <?php echo $row->WPM ?>
-              </td>
-              <td>
-                <?php echo $row->WCPM ?>
-              </td>
-
+              </td>         
             </tr>
           <?php endforeach ?>
 
@@ -128,3 +80,4 @@
     </div>
     <!-- /.box-footer-->
   </div>
+</div>

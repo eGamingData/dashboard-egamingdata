@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
 
     <?php echo form_open('/login/set_new_password', ['method' => 'POST', 'autocomplete' => 'off']); ?> 
-    	<input type="hidden" value="<?php echo $user->reset_token ?>" />
+    	<input type="hidden" name="token" value="<?php echo $user->reset_token ?>" />
       <div class="form-group has-feedback">
         <input type="password" class="form-control" placeholder="Enter New Password..." minlength="6" name="password" required autofocus id="password" />
         <span class="fa fa-lock form-control-feedback"></span>

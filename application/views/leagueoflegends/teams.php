@@ -31,21 +31,27 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <script>
   $('#dataTable1').DataTable({
         "sDom": 't',
-        "order": [[ 2, "desc" ]]
+        "order": [[ 2, "desc" ]],
+        "scrollX": true
     });
   $('#dataTable2').DataTable({
-        "sDom": 't'
+        "sDom": 't',
+        "scrollX": true
     });
   $('#dataTable3').DataTable({
-        "sDom": 't'
+        "sDom": 't',
+        "scrollX": true
     });
   $('#dataTable4').DataTable({
-        "sDom": 't'
+        "sDom": 't',
+        "scrollX": true
     });
   $('#dataTable5').DataTable({
-        "sDom": 't'
+        "sDom": 't',
+        "scrollX": true
     });
   $('#dataTable6').DataTable({
-        "sDom": 't'
+        "sDom": 't',
+        "scrollX": true
     });
 </script>

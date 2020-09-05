@@ -119,7 +119,7 @@ class Users_model extends MY_Model {
 		$this->email->from(setting('company_email'), setting('company_name') );
 		$this->email->to($user->email);
 
-		$this->email->subject('Reset Your Account Password | ' . setting('company_name') );
+		$this->email->subject( 'Password reset for user ' .$user->username. ' | ' . setting('company_name') );
 
 		$reset_link = url('login/new_password?token='.$reset_token);
 

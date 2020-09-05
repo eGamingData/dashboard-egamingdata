@@ -100,6 +100,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <!-- FastClick -->
   <script src="<?php echo base_url() ?>assets/plugins/fastclick/lib/fastclick.js"></script>
 
+  <!-- Fixed columns datatables -->
+  <script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.1/js/dataTables.fixedColumns.min.js"></script>
+
+  <script>
+  window.announcekit = (window.announcekit || { queue: [], on: function(n, x) { window.announcekit.queue.push([n, x]); }, push: function(x) { window.announcekit.queue.push(x); } });
+  window.announcekit.push({
+    "widget": "https://announcekit.app/widgets/v2/2OTEC4",
+    "selector": ".announcekit-widget"
+  })
+</script>
+<script async src="https://cdn.announcekit.app/widget-v2.js"></script>
+
 
   <style>
     .img-avtar{
@@ -123,9 +135,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Logo -->
     <a href="<?php echo url('/') ?>" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>e</b>GD</span>
+      <span class="logo-mini"><img src="https://egamingdata.com/assets/images/e_logo.png" width="80%" ></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><img src="https://egamingdata.com/assets/img/logo.png" class="logo-fl" alt="Logo" style="max-width: 20rem;"></span>
+      <span class="logo-lg"><img src="https://egamingdata.com/assets/images/logo.png" class="logo-fl" alt="Logo" style="max-width: 20rem;"></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -137,19 +149,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-
+      
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <!-- User Account: style can be found in dropdown.less -->
-          <li class="dropdown user user-menu">
+          <li class="dropdown user user-menu no-drop-border">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="<?php echo userProfile(logged('id')) ?>" class="user-image" alt="User Image">
+              <!--<img src="<?php echo userProfile(logged('id')) ?>" class="user-image" alt="User Image">-->
+              <i class="fa fa-user fa-lg" aria-hidden="true"></i>
               <span class="hidden-xs"><?php echo logged('name') ?></span>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu no-drop-border">
               <!-- User image -->
               <li class="user-header">
-                <img src="<?php echo userProfile(logged('id')) ?>" class="img-circle" alt="User Image">
+                <!--<img src="<?php echo userProfile(logged('id')) ?>" class="img-circle" alt="User Image"> -->
+                 <i class="fa fa-user fa-5x" aria-hidden="true" style="color: white; margin-top: 5px;"></i>
 
                 <p>
                   <?php echo logged('name') ?>
@@ -168,6 +182,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </li>
             </ul>
           </li>
+
           <!-- Control Sidebar Toggle Button -->
           <li>
             <a href="#" data-toggle="control-sidebar"></a>
@@ -184,7 +199,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
-      <div class="user-panel">
+      <!--<div class="user-panel">
         <div class="pull-left image">
           <img src="<?php echo userProfile(logged('id')) ?>" class="img-circle" alt="User Image">
         </div>
@@ -192,9 +207,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <p><?php echo logged('name') ?></p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
-      </div>
+      </div> -->
       <!-- search form -->
-      <form action="#" method="get" class="sidebar-form" autocomplete="off">
+      <!--<form action="#" method="get" class="sidebar-form" autocomplete="off">
         <div class="input-group">
           <input type="text" name="q" class="form-control search-menu-box" placeholder="Search...">
           <span class="input-group-btn">
@@ -202,7 +217,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </button>
               </span>
         </div>
-      </form>
+      </form> -->
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <?php include 'nav.php' ?>

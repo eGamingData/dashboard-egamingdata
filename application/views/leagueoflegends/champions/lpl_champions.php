@@ -32,6 +32,21 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
 <script>
   $('#general-champions-table').DataTable({
+      'dom': 'lftip',
+      "bAutoWidth": true,
+      "scrollX": true
     });
   
 </script>
+
+
+<style type="text/css">	
+.dataTables_filter {
+   float: right;
+   text-align: right;
+}
+.dataTables_length{
+	float: left;
+   text-align: left;
+}
+</style>

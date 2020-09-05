@@ -27,54 +27,44 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
     <!-- signup form -->
   <?php echo form_open('/signup/signup_data', ['method' => 'POST', 'autocomplete' => 'off']); ?> 
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="form-group has-feedback">
+    <div class="row">      
+        <div class="form-group has-feedback" style="margin: 15px">
            <span class="fa fa-user form-control-feedback"></span>
           <input style="border-radius: 1.5rem;" type="text" class="form-control" placeholder="Username" value="<?php echo post('username') ?>"  name="username" autofocus />
           <?php echo form_error('username', '<div class="error" style="color: red; margin-left: 5px;">', '</div>'); ?>                  
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="form-group has-feedback">
+        </div>            
+    </div>
+      <div class="row"> 
+        <div class="form-group has-feedback" style="margin-right:  15px; margin-left: 15px; margin-bottom: 15px;">
           <span class="fa fa-address-card form-control-feedback"></span>
           <input style="border-radius: 1.5rem;" type="text" class="form-control" placeholder="First Name"  name="fname" value="<?php echo post('fname') ?>" autofocus />
             <?php echo form_error('fname', '<div class="error" style="color: red; margin-left: 5px;">', '</div>'); ?>       
         </div>
-      </div>           
     </div>
     
     <div class="row">
-      <div class="col-sm-6">
-        <div class="form-group has-feedback">
+        <div class="form-group has-feedback" style="margin-right:  15px; margin-left: 15px; margin-bottom: 15px;">
           <span class="fa fa-address-card form-control-feedback"></span>
           <input style="border-radius: 1.5rem;" type="text" class="form-control" placeholder="Last Name" value="<?php echo post('lname') ?>"  name="lname" autofocus />
             <?php echo form_error('lname', '<div class="error" style="color: red; margin-left: 5px;">', '</div>'); ?>       
         </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="form-group has-feedback">
+        <div class="form-group has-feedback" style="margin-right:  15px; margin-left: 15px; margin-bottom: 15px;">
           <span class="fa fa-envelope form-control-feedback"></span>
           <input style="border-radius: 1.5rem;" type="email" class="form-control" placeholder="Email" value="<?php echo post('email') ?>"  name="email" autofocus />
             <?php echo form_error('email', '<div class="error" style="color: red; margin-left: 5px;">', '</div>'); ?>       
         </div>
-      </div>  
     </div>   
     <div class="row">        
-      <div class="col-sm-6">
-        <div class="form-group has-feedback">
+        <div class="form-group has-feedback" style="margin-right:  15px; margin-left: 15px; margin-bottom: 15px;">
           <span class="fa fa-lock form-control-feedback"></span>
           <input style="border-radius: 1.5rem;" type="password" class="form-control" placeholder="Password" value="<?php echo post('password') ?>"  name="password" autofocus />
           <?php echo form_error('password', '<div class="error" style="color: red; margin-left: 5px;">', '</div>'); ?>
         </div>
-      </div>  
-      <div class="col-sm-6">
-        <div class="form-group has-feedback">
+        <div class="form-group has-feedback" style="margin-right:  15px; margin-left: 15px; margin-bottom: 15px;">
           <span class="fa fa-lock form-control-feedback"></span>
           <input style="border-radius: 1.5rem;" value="<?php echo post('cpassword') ?>" type="password" class="form-control" placeholder="Confirm Password"  name="cpassword" autofocus />
           <?php echo form_error('cpassword', '<div class="error" style="color: red; margin-left: 5px;">', '</div>'); ?>
         </div>
-      </div>
     </div>    
    <?php if (setting('google_recaptcha_enabled') == '1'): ?>
         

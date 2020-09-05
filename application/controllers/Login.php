@@ -9,6 +9,7 @@ class Login extends CI_Controller {
 	{
 		parent::__construct();
 		
+		
 
 		date_default_timezone_set( setting('timezone') );
 
@@ -220,7 +221,7 @@ class Login extends CI_Controller {
 			'reset_token'	=>	'',
 		]);
 
-		$this->session->set_flashdata('message', 'New Password has been Updated, You can login now');
+		$this->session->set_flashdata('message', 'New Password for userid '.$user->id. ' has been Updated, You can login now');
 		$this->session->set_flashdata('message_type', 'success');
 		redirect('login', 'refresh');
 

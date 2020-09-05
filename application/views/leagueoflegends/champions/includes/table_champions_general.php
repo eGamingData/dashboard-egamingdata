@@ -11,7 +11,7 @@
 
     </div>
     <div class="box-body">
-      <table id="general-champions-table" class="table table-bordered table-striped">
+      <table id="general-champions-table" class="table table-bordered table-striped" width="100%">
         <thead>
           <tr>
           	<th>Champion</th>

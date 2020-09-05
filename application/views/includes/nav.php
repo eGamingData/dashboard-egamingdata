@@ -19,16 +19,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </span>
     </a>
     <ul class="treeview-menu">
-      <li <?php echo ($page->submenu=='lol-general')?'class="active"':'' ?>>
+      <!--<li <?php echo ($page->submenu=='lol-general')?'class="active"':'' ?>>
    <a href="<?php echo url('league-of-legends/general') ?>">
        <i class="fa fa-list-alt" aria-hidden="true"></i>
     </i> <span>General</span>
     </a>
-  </li>
+  </li>-->
       <!-- LEAGUE OF LEGENDS TEAMS SECTION -->
         <li class="treeview <?php echo ($page->submenu=='lol-teams')?'active':'' ?>">
         <a href="#">
-          <i class="fa fa-users"></i> Teams
+          <i class="fa fa-users"></i> Leagues
           <span class="pull-right-container">
         <i class="fa fa-angle-left pull-right"></i>
       </span>
@@ -214,19 +214,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </li>
 
 
-  <li <?php echo ($page->menu=='ar')?'class="active"':'' ?>>
+  <!--<li <?php echo ($page->menu=='ar')?'class="active"':'' ?>>
     <a href="<?php echo url('dota') ?>">
      <img src="https://dashboard.egamingdata.com/assets/img/dota-icon.png" width=" 17px" style="margin-right: 5px;"></i> 
      <span>Dota</span>
     </a>
-  </li>
+  </li> -->
 
-  <li <?php echo ($page->menu=='csgo')?'class="active"':'' ?>>
+  <!--<li <?php echo ($page->menu=='csgo')?'class="active"':'' ?>>
     <a href="<?php echo url('csgo') ?>">
      <img src="https://dashboard.egamingdata.com/assets/img/csgo-icon.png" width=" 17px" style="margin-right: 5px;"></i> 
      <span>CS:GO</span>
     </a>
-  </li>
+  </li> -->
   <?php if ( hasPermissions('predictions') ): ?>
   <li class="treeview <?php echo ($page->menu=='predictions')?'active':'' ?>">
    <a href="<?php echo url('predictions') ?>">
@@ -254,6 +254,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </li>
     </ul>
   </li>
+   <?php endif ?>
   <?php if ( hasPermissions('betting_tracker') ): ?>
   <li <?php echo ($page->menu=='tracker')?'class="active"':'' ?>>
     <a href="<?php echo url('tracker') ?>">
@@ -261,22 +262,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
      <span>Betting Tracker</span>
     </a>
   </li>
+ 
   <?php endif ?>
-  <?php endif ?>
-  <li <?php echo ($page->menu=='subscription')?'class="active"':'' ?>>
+  <!--<li <?php echo ($page->menu=='subscription')?'class="active"':'' ?>>
     <a href="<?php echo url('subscription') ?>">
        <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
     </i> <span>Subscriptions</span>
     </a>
-  </li>  
-  <?php if ( hasPermissions('company_settings') ): ?>
-  <li <?php echo ($page->menu=='status')?'class="active"':'' ?>>
-    <a href="<?php echo url('status') ?>">
-     <i class="fa fa-info-circle" aria-hidden="true"></i>
-     <span>Data status</span>
-    </a>
-  </li>
-  <?php endif ?>
+  </li>  -->
 
   <?php if (hasPermissions('users_list')): ?>
     <li <?php echo ($page->menu=='users')?'class="active"':'' ?>>

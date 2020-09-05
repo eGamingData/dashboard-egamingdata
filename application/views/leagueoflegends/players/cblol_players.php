@@ -18,6 +18,13 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
    <?php include 'includes/table_general.php'; ?>
 
+
+  <div class="row">
+    <?php include 'includes/difference_ten.php'; ?>
+    <?php include 'includes/kda.php'; ?>
+  </div>
+
+
 </section>
 <!-- /.content -->
 
@@ -25,6 +32,20 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
 <script>
   $('#general-table').DataTable({
+  	'dom': 'lftip',
+    "bAutoWidth": true,
+  	"scrollX": true
 
     });
 </script>
+
+<style type="text/css"> 
+.dataTables_filter {
+   float: right;
+   text-align: right;
+}
+.dataTables_length{
+  float: left;
+   text-align: left;
+}
+</style>

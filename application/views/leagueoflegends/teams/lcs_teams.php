@@ -39,21 +39,40 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
 <script>  
   $('#tower-table').DataTable({
-        "sDom": 't'
+        "sDom": 't',
+        "iDisplayLength": 50,
+        "bAutoWidth": true,
+        "scrollX": true
+
     });  
   $('#drake-table').DataTable({
-        "sDom": 't'
+       "sDom": 't',
+        "iDisplayLength": 50,
+        "bAutoWidth": true,
+        "scrollX": true
     });
   $('#standings-table').DataTable({
-        "sDom": 't'
+        "sDom": 't',
+        "iDisplayLength": 50,
+        "bAutoWidth": true,
+        "scrollX": true
     });
   $('#jungle-table').DataTable({
-        "sDom": 't'
+        "sDom": 't',
+        "iDisplayLength": 50,
+        "bAutoWidth": true,
+        "scrollX": true
     });
   $('#gold-table').DataTable({
-        "sDom": 't'
+        "sDom": 't',
+        "iDisplayLength": 50,
+        "bAutoWidth": true,
+        "scrollX": true
     });
   $('#kda-table').DataTable({
-        "sDom": 't'
+        "sDom": 't',
+        "iDisplayLength": 50,
+        "bAutoWidth": true,
+        "scrollX": true
     });
 </script>

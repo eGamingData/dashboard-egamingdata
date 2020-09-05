@@ -10,7 +10,7 @@
 
     </div>
     <div class="box-body">
-      <table id="tower-table" class="table table-bordered table-striped">
+      <table id="tower-table" class="table table-bordered table-striped" width="100%">
         <thead>
           <tr>
             <th>Team</th>

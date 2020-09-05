@@ -76,28 +76,28 @@ class CI_Email {
 	 *
 	 * @var	string
 	 */
-	public $smtp_host	= '';
+	public $smtp_host	= 'mail.egamingdata.com';
 
 	/**
 	 * SMTP Username
 	 *
 	 * @var	string
 	 */
-	public $smtp_user	= '';
+	public $smtp_user	= 'noreply@egamingdata.com';
 
 	/**
 	 * SMTP Password
 	 *
 	 * @var	string
 	 */
-	public $smtp_pass	= '';
+	public $smtp_pass	= 'Xaviergarcia21';
 
 	/**
 	 * SMTP Server port
 	 *
 	 * @var	int
 	 */
-	public $smtp_port	= 25;
+	public $smtp_port	= 465;
 
 	/**
 	 * SMTP connection timeout in seconds
@@ -140,7 +140,7 @@ class CI_Email {
 	 *
 	 * @var	string	'text' or 'html'
 	 */
-	public $mailtype	= 'text';
+	public $mailtype	= 'html';
 
 	/**
 	 * Character set (default: utf-8)

@@ -89,30 +89,17 @@ include viewPath('includes/header'); ?>
       <!-- ./col -->
       <div class="col-sm-8">
         <!-- small box -->
-        <div class="small-box bg-yellow bet-tracker-box">
-          <div style="width:75%;"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-    <canvas id="canvas" style="display: block; width: 1217px; height: 345px;" width="1217" height="500" class="chartjs-render-monitor"></canvas>
-  </div>
-         <div class="chart">
-            
-
-          </div>
-        </div>
-      </div>
-      <!-- ./col -->
-  </div>
-
-<div class="box">
+        <div class="box">
     <div class="box-header with-border">
       <h3 class="box-title"><img class="icon" src="assets/img/podium.svg"> Betting history </h3>
       <div class="box-tools pull-right">
         <button type="button" onclick="add_tracker();" class="btn btn-success">
-         Add bet</button>
+         <i class="fa fa-plus" aria-hidden="true"></i></button>
       </div>
 
     </div>
     <div class="box-body">
-      <table id="dataTable1" class="table table-bordered table-striped">
+      <table id="dataTable1" class="table table-bordered table-striped" width="100%">
         <thead>
           <tr>
             <th> Date </th>
@@ -149,11 +136,9 @@ include viewPath('includes/header'); ?>
     </div>
     <!-- /.box-footer-->
   </div>
-
-
- 
-
-
+      </div>
+      <!-- ./col -->
+  </div>
 </section>
 
 <!-- Modal -->
@@ -280,29 +265,17 @@ function add_tracker(){
 $('#myModal').modal('show');
 }
 
-  $('#dataTable1').DataTable();
-  $('#dataTable2').DataTable({
-        "sDom": 't'
-    });
-  $('#dataTable3').DataTable({
-        "sDom": 't'
-    });
-  $('#dataTable4').DataTable({
-        "sDom": 't'
-    });
-  $('#dataTable5').DataTable({
-        "sDom": 't'
-    });
-  $('#dataTable6').DataTable({
-        "sDom": 't'
-    });
-    
+  $('#dataTable1').DataTable({
+      "bAutoWidth": true,
+      "scrollX": true
+  });
+  
     
     function remove_tracker(id){
        
        swal({
   title: "Are you sure?",
-  text: "Once deleted, you will not be able to recover this",
+  text: "Once deleted, you will not be able to recover the entry",
   icon: "warning",
   buttons: true,
   dangerMode: true,

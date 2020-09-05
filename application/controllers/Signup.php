@@ -65,7 +65,7 @@ class Signup extends CI_Controller {
               'email'=>$_POST['email'],
                'username'=>$_POST['username'],
                 'password'=>hash( "sha256", $_POST['password']),
-                'role'=>5,
+                'role'=>3,
                 'trial_expiry'=>$trial_expiry
              );
 
