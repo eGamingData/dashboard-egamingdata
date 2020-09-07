@@ -335,3 +335,14 @@ a.purple{
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }
+
+.table{width:auto;table-layout:fixed}
+
+th, td { white-space: nowrap; }
+    div.dataTables_wrapper {
+        margin: 0 auto;
+    }
+ 
+    div.container {
+        width: 80%;
+    }

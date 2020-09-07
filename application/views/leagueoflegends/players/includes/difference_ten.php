@@ -33,7 +33,7 @@
             	<td>
                 <?php echo $row->Player ?>
               </td>
-              <td>>
+              <td>
                 <?php echo $row->Team ?>
               </td>
                <td>

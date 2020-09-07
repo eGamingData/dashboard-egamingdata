@@ -17,6 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     gtag('config', 'UA-177388584-1');
   </script>
+  
 
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -110,8 +111,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <!-- FastClick -->
   <script src="<?php echo base_url() ?>assets/plugins/fastclick/lib/fastclick.js"></script>
 
-  <!-- Fixed columns datatables -->
-  <script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.1/js/dataTables.fixedColumns.min.js"></script>
+ 
 
   <script>
   window.announcekit = (window.announcekit || { queue: [], on: function(n, x) { window.announcekit.queue.push([n, x]); }, push: function(x) { window.announcekit.queue.push(x); } });

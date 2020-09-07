@@ -75,6 +75,7 @@
               </td>
               <td>
                 <?php echo $row->W ?>
+                
               </td>
               <td>
                 <?php echo $row->CTR ?>

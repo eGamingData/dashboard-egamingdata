@@ -18,26 +18,49 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
    <?php include 'includes/table_general.php'; ?>
 
-
   <div class="row">
     <?php include 'includes/difference_ten.php'; ?>
     <?php include 'includes/kda.php'; ?>
   </div>
 
-
 </section>
+
+
 <!-- /.content -->
 
 <?php include viewPath('includes/footer'); ?>
 
 <script>
   $('#general-table').DataTable({
-  	'dom': 'lftip',
-    "bAutoWidth": true,
-  	"scrollX": true
+    'dom': 'lftip',
+    "fixedColumns": {
+    "leftColumns": 1
+  },
+    "bAutoWidth": false,
+    "scrollX": true,
+    "fixedColumns" : true,
+    "columnDefs": [
+     { "width": "100px", "targets": "_all" }
+    ]
 
     });
+
+  $('#difference-ten').DataTable({
+    'dom': 'lftip',
+    "bAutoWidth": true,
+    "scrollX": true
+  });
+  $('#kda-table').DataTable({
+    'dom': 'lftip',
+    "bAutoWidth": true,
+    "scrollX": true
+
+    });
+
 </script>
+
+
+
 
 <style type="text/css"> 
 .dataTables_filter {
