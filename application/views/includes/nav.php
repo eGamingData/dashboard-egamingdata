@@ -88,7 +88,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <!-- LEAGUE OF LEGENDS PLAYERS SECTION -->
       <li class="treeview <?php echo ($page->submenu=='lol-players')?'active':'' ?>">
         <a href="<?php echo url('predictions') ?>">
-          <i class="fa fa-user"></i> Players
+          <i class="fa fa-user"></i> Players (Fantasy)
           <span class="pull-right-container">
         <i class="fa fa-angle-left pull-right"></i>
       </span>
