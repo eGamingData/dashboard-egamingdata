@@ -1253,7 +1253,7 @@ a:focus {
   border-color: #d2d6de;
 }
 .form-control:focus {
-  border-color: #3c8dbc;
+  border-color: #f95fcd;
   box-shadow: none;
 }
 .form-control::-moz-placeholder,
@@ -2216,6 +2216,7 @@ a:focus {
   -moz-box-shadow: none;
   box-shadow: none;
   border-width: 1px;
+  border-radius: 50px;
 }
 .btn:active {
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
