@@ -18,14 +18,14 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
    <?php include 'includes/table_general.php'; ?>
 
-
   <div class="row">
     <?php include 'includes/difference_ten.php'; ?>
     <?php include 'includes/kda.php'; ?>
   </div>
 
-
 </section>
+
+
 <!-- /.content -->
 
 <?php include viewPath('includes/footer'); ?>
@@ -49,14 +49,14 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
     'dom': 'lftip',
     "bAutoWidth": true,
     "scrollX": true
-
-    });
+  });
   $('#kda-table').DataTable({
     'dom': 'lftip',
     "bAutoWidth": true,
     "scrollX": true
 
     });
+
 </script>
 
 

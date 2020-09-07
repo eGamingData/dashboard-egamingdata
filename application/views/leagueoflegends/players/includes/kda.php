@@ -40,7 +40,24 @@
                 <?php echo $row->Team ?>
               </td>
                <td>
-                <?php echo $row->Pos ?>
+                <?php
+                if ( $row->Pos == 'Top') {
+                    echo "<center><img style='width:30% !important;margin-right: 5px;' src='https://egamingdata.com/assets/icons/Toprole_icon.png'></img></center>";
+                    echo "<span style='visibility:hidden;'>Top</span>";
+                  } elseif ($row->Pos == 'ADC') {
+                    echo "<center><img style='width:30% !important;margin-right: 5px;' src='https://egamingdata.com/assets/icons/AD_Carryrole_icon.png'></img></center>";
+                    echo "<span style='visibility:hidden;'>Adc</span>";
+                  } elseif ($row->Pos == 'Middle') {
+                    echo "<center><img style='width:30% !important;margin-right: 5px;' src='https://egamingdata.com/assets/icons/Midrole_icon.png'></img></center>";
+                    echo "<span style='visibility:hidden;'>Mid</span>";
+                  } elseif ($row->Pos == 'Support') {
+                    echo "<center><img style='width:30% !important;margin-right: 5px;' src='https://egamingdata.com/assets/icons/Supportrole_icon.png'></img></center>";
+                    echo "<span style='visibility:hidden;'>Supp</span>";
+                  } elseif ($row->Pos == 'Jungle') {
+                    echo "<center><img style='width:30% !important;margin-right: 5px;' src='https://egamingdata.com/assets/icons/Junglerole_icon.png'></img></center>";
+                    echo "<span style='visibility:hidden;'>Jung</span>";
+                  }
+                 ?>
               </td>
               <td>
                 <?php echo $row->GP ?>

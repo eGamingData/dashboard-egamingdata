@@ -20,6 +20,7 @@ class Lol_players extends MY_Controller {
 		$this->load->view('leagueoflegends/leagueoflSegends', $this->page_data);
 	}
 
+
 	//Function to load LEC Players on lec_players.php
 	public function get_lec_players()
 	{
